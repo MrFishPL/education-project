@@ -1,0 +1,59 @@
+.about {
+  text-align: center;
+  background-image: url(../img/ruins.jpg);
+  background-attachment: fixed;
+}
+
+.a-container {
+  width: 100%;
+  padding: 130px 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(210deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.6) 100%);
+}
+
+.about-text {
+  width: min(100%, 1260px);
+  padding: 0 30px;
+  margin: auto;
+}
+
+.about-text h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+}
+
+.about-text p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.about-text i {
+  font-size: 40px;
+}
+
+.p400 {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .a-container {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .p400 {
+    display: block;
+  }
+
+  .about-text h2 span {
+    display: block;
+    margin-top: 10px;
+  }
+}
