@@ -146,6 +146,7 @@
 
   .row-image {
     aspect-ratio: 1/1;
+    height: 100vw;
   }
 
   .row-text h2 {
