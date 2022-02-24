@@ -39,3 +39,18 @@ footer p a:hover {
   opacity: 1;
   transition: opacity .3s;
 }
+
+.logos {
+
+}
+
+.logos img {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+footer img {
+  width: 100%;
+  margin-top: 20px;
+}

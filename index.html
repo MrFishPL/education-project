@@ -434,27 +434,28 @@
       <p>Strona wykonana na potrzeby projektu "Lorem ipsum"</p>
       <p>2022 &copy; Wszelkie prawa zastrzeżone</p>
       <p>Strona internetowa szkoły: <a href="https://tl.krakow.pl/">https://tl.krakow.pl/</a></p>
+      <img src="img/belka.jpg" alt="">
     </footer>
+
+    <script type="text/javascript">
+      // Te funkcje mają bardzo brzydki kod.
+      // Zaglądanie do środka grozi ostrą niewydolnością gałek ocznych.
+      $(document).ready(function() {
+        // Pojawianie się elementów
+        fade();
+
+        // Parralax na tle nagłówka
+        parralax();
+
+        // Obsługa menu - responsywność i scrollowanie
+        menu();
+
+        // Tłumaczenie strony
+        language();
+
+        // Pasek postępu scrollowania
+        scrollBar();
+      });
+    </script>
   </body>
-
-  <script type="text/javascript">
-    // Te funkcje mają bardzo brzydki kod.
-    // Zaglądanie do środka grozi ostrą niewydolnością gałek ocznych.
-    $(document).ready(function() {
-      // Pojawianie się elementów
-      fade();
-
-      // Parralax na tle nagłówka
-      parralax();
-
-      // Obsługa menu - responsywność i scrollowanie
-      menu();
-
-      // Tłumaczenie strony
-      language();
-
-      // Pasek postępu scrollowania
-      scrollBar();
-    });
-  </script>
 </html>
