@@ -1,7 +1,13 @@
 .about {
   text-align: center;
+
+  /* Author: Jarmoluk */
+  /* Photo from: https://pixabay.com/photos/old-books-book-old-library-436498/ */
+  /* Author's profile: https://pixabay.com/users/jarmoluk-143740/ */
   background-image: url(../img/ruins.jpg);
+
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .a-container {

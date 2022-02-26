@@ -11,17 +11,22 @@ function language() {
       $(".menu ul li:nth-child(3) a").text("about");
 
       // Header
-      $(".h-text h2").text("Students of the 1st class of the Upper-Secondary Schools of Communications in Krakow decided to make websites about Poles who, for good, wrtoe themself in the history. You're welcome to see all of them.");
+      // Translation was made by Karol Ostrówka
+      $(".h-text h2").text("Students of the 1st programing class of Upper-Secondary Schools of Communications in Krakow, decided to make websites about famous Polish people. About people who have gone down in history. We want to show you our work.");
       $(".tr").html('<i class="icon-quote-left"></i>&nbsp;Each day is <span class="blue">a little bit of history</span>, and no one can narrate everything.&nbsp;<i class="icon-quote-right"></i>');
 
       // About section
       $(".about-text h2 span").text("About the project");
-      $(".about-text p").text("Projects shown on the website were made by students of the 1st class of the Upper-Secondary Schools of Communications in Krakow. The projects were made under the National Reading Development Programme 2.0. The students' task was to create websites about Poles who, for good, wrote themself in the history. Technical and visual aspect is supervised by Mrs Dominika Stęchły - Maniak, the teacher of Creating Static Websites and the substantive side of the project is under the care of Mrs Agnieszka Kozłowska, the Polish and class teacher. Mrs Magalena Czechowska - Buratowska and Mr Piotr Piekarski, English teachers, supervise the websites' tranlations.");
+      // Translation was made by Karol Ostrówka
+      $(".about-text p").text("Projects shown on the website were made by students of the 1st programing class of the Upper-Secondary Schools of Communications in Krakow. The projects were made under the National Reading Development Programme 2.0. The students' task was to create websites about famous Polish people in the history. Technical and visual aspect is supervised by Mrs Dominika Stęchły - Maniak, the teacher of Creating Static Websites and the substantive side of the project is under the care of Mrs Agnieszka Kozłowska, the Polish and class teacher. Mrs Magalena Czechowska - Buratowska and Mr Piotr Piekarski, English teachers, supervised the website's tranlations.");
 
       // Footer
       $("footer p:nth-child(1)").text("This website was made under the National Reading Development Programme 2.0");
       $("footer p:nth-child(2)").html("2022 &copy; All rights reserved");
       $("footer p:nth-child(3)").html("The school's website: <a href='https://tl.krakow.pl/'>https://tl.krakow.pl/</a>");
+
+      //Rowtext
+      $(".row-text p").text("Website about Adam Mickiewicz, it includes his whole biography as well as information about his works and a few related pictures. At the end you can also find a list of interesting facts.");
     }
 
     else {
@@ -45,6 +50,9 @@ function language() {
       $("footer p:nth-child(1)").text("Strona została wykonana w ramach Narodowego Programu Rozwoju Czytelnictwa 2.0");
       $("footer p:nth-child(2)").html("2022 &copy; Wszelkie prawa zastrzeżone.");
       $("footer p:nth-child(3)").html("Strona internetowa szkoły: <a href='https://tl.krakow.pl/'>https://tl.krakow.pl/</a>");
+
+      //Rowtext
+      $(".row-text p").text("Strona internetowa o Adamie Mickiewiczu. Znajduje się tutaj jego cały życiorys. Można poznać jego twórczość oraz zobaczyć kilka związanych z nim obrazków. Na końcu znajdują się także ciekawostki.");
     }
   });
 }

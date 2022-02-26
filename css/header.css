@@ -1,7 +1,11 @@
 
 
 .main-header {
+  /* Author: Pexels */
+  /* Photo from: https://pixabay.com/photos/maps-pages-papers-vintage-1854199/ */
+  /* Author's profile: https://pixabay.com/users/pexels-2286921/ */
   background-image: url(../img/main-bg.jpg);
+
   width: 100%;
   background-size: cover;
   background-clip: border-box;
@@ -48,10 +52,7 @@ span.blue {
 }
 
 .h-text h2 {
-  /* margin-top: 70px; */
   width: min(100%, 800px);
-  /* margin-left: auto;
-  margin-right: auto; */
   margin-bottom: 30px;
   letter-spacing: 2px;
   text-align: left;

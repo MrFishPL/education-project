@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wielcy Polacy - projekty edukacyjne uczniów</title>
 
+    <link rel="preload" href="css/preload.css" as="style" />
+    <link rel="preload" href="img/load.jpg" as="image" />
+
+    <link rel="stylesheet" href="css/preload.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="fontello/css/fontello.css" />
@@ -15,12 +19,13 @@
     <link rel="stylesheet" href="css/footer.css" />
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preload.js"></script>
     <script type="text/javascript" src="js/fade.js"></script>
     <script type="text/javascript" src="js/parralax.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/language.js"></script>
     <script type="text/javascript" src="js/scrollbar.js"></script>
-<link rel="icon" type="image/ico" href="flavicon.ico">
+    <link rel="icon" type="image/ico" href="flavicon.ico">
 
     <!---
 
@@ -51,6 +56,11 @@
   -->
   </head>
   <body>
+    <div class="loading">
+      <img src="img/load.jpg" alt="Mickiewicz">
+      <p>Loading</p>
+    </div>
+
     <header class="main-header" id="header">
       <nav class="menu">
         <a class="language">EN</a>
@@ -127,7 +137,112 @@
       </div>
 
       <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w3.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+        <div class="row-image" style="--bg: url(../img/sites/w3.jpg)"><a href="sites/s3/Adam Mickiewicz.html" target="_blank"><i class="icon-link-ext"></i></a></div>
+
+        <div class="row-text">
+          <h2>Adam Mickiewicz - życie i twórczość</h2>
+          <div class="authors">
+            <figure title="Szymon Grela">
+              <img src="img/avatars/szymon_grela.jpg" />
+              <figcaption>Szymon <br class="mobile-break-line" />Grela</figcaption>
+            </figure>
+
+            <figure title="Jakub Morozas">
+              <img src="img/avatars/kuba_morozas.jpg" />
+              <figcaption>Jakub <br class="mobile-break-line" />Morozas</figcaption>
+            </figure>
+          </div>
+          <p>Strona internetowa o Adamie Mickiewiczu. Znajduje się tutaj jego cały życiorys. Można poznać jego twórczość oraz zobaczyć kilka związanych z nim obrazków. Na końcu znajdują się także ciekawostki.</p>
+          <a href="sites/s3/Adam Mickiewicz.html" target="_blank">Zobacz stronę</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-image" style="--bg: url(../img/sites/w4.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+
+        <div class="row-text">
+          <h2>Zawisza i jego historia.</h2>
+          <div class="authors">
+            <figure title="Jacek Kowalski">
+              <img src="img/avatars/a1.png" />
+              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/avatars/a1.png" />
+              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">Zobacz stronę</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-image" style="--bg: url(../img/sites/w5.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+
+        <div class="row-text">
+          <h2>Zawisza i jego historia.</h2>
+          <div class="authors">
+            <figure title="Jacek Kowalski">
+              <img src="img/avatars/a1.png" />
+              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/avatars/a1.png" />
+              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">Zobacz stronę</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-image" style="--bg: url(../img/sites/w1.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+
+        <div class="row-text">
+          <h2>Zawisza i jego historia.</h2>
+          <div class="authors">
+            <figure title="Jacek Kowalski">
+              <img src="img/avatars/a1.png" />
+              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/avatars/a1.png" />
+              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">Zobacz stronę</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-image" style="--bg: url(../img/sites/w2.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+
+        <div class="row-text">
+          <h2>Zawisza i jego historia.</h2>
+          <div class="authors">
+            <figure title="Jacek Kowalski">
+              <img src="img/avatars/a1.png" />
+              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/avatars/a1.png" />
+              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
+            </figure>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">Zobacz stronę</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-image" style="--bg: url(../img/sites/w3.jpg)"><a href="#"><i class="icon-link-ext"></i></a></div>
 
         <div class="row-text">
           <h2>Zawisza i jego historia.</h2>
@@ -232,112 +347,7 @@
       </div>
 
       <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w3.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
-
-        <div class="row-text">
-          <h2>Zawisza i jego historia.</h2>
-          <div class="authors">
-            <figure title="Jacek Kowalski">
-              <img src="img/avatars/a1.png" />
-              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/avatars/a1.png" />
-              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Zobacz stronę</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w4.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
-
-        <div class="row-text">
-          <h2>Zawisza i jego historia.</h2>
-          <div class="authors">
-            <figure title="Jacek Kowalski">
-              <img src="img/avatars/a1.png" />
-              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/avatars/a1.png" />
-              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Zobacz stronę</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w5.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
-
-        <div class="row-text">
-          <h2>Zawisza i jego historia.</h2>
-          <div class="authors">
-            <figure title="Jacek Kowalski">
-              <img src="img/avatars/a1.png" />
-              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/avatars/a1.png" />
-              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Zobacz stronę</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w1.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
-
-        <div class="row-text">
-          <h2>Zawisza i jego historia.</h2>
-          <div class="authors">
-            <figure title="Jacek Kowalski">
-              <img src="img/avatars/a1.png" />
-              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/avatars/a1.png" />
-              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Zobacz stronę</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w2.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
-
-        <div class="row-text">
-          <h2>Zawisza i jego historia.</h2>
-          <div class="authors">
-            <figure title="Jacek Kowalski">
-              <img src="img/avatars/a1.png" />
-              <figcaption>Jacek <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-
-            <figure>
-              <img src="img/avatars/a1.png" />
-              <figcaption>Janusz <br class="mobile-break-line" />Kowalski</figcaption>
-            </figure>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="#">Zobacz stronę</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-image" style="--bg: url(../img/sites/w3.png)"><a href="#"><i class="icon-link-ext"></i></a></div>
+        <div class="row-image" style="--bg: url(../img/sites/w3.jpg)"><a href="#"><i class="icon-link-ext"></i></a></div>
 
         <div class="row-text">
           <h2>Zawisza i jego historia.</h2>
@@ -426,8 +436,6 @@
         <div class="about-text">
           <h2><i class="icon-book"></i> <br class="p400"/><span>O projekcie</span></h2>
           <p>Przedstawione na stronie witryny zostały wykonane przez uczniów klasy 1P Zespołu Szkół Łączności w Krakowie w ramach Narodowego Programu Rozwoju Czytelnictwa 2.0. Zadanie polegało na opracowaniu strony internetowej, która odbiorcy przybliży postać wybranego wielkiego Polaka. Aspektem technicznym i wizualnym opiekuje się Pani Dominika Stęchły - Maniak, nauczyciel Tworzenia Statycznych Stron Internetowych, a stroną merytoryczną - Pani Agnieszka Kozłowska, polonistka i wychowawca klasy. Tłumaczenia stron nadzorują Pani Magdalena Czechowska - Buratowska oraz Pan Piotr Piekarski, nauczyciele języka angielskiego.</p>
-
-          <!-- Projects shown on the website were made by students of the 1st class of the Upper-Secondary Schools of Communications in Krakow. The projects were made under the National Reading Development Programme 2.0. The students' task was to create websites about Poles who, for good, wrote themself in the history. Technical and visual aspect is supervised by Mrs Dominika Stęchły - Maniak, the teacher of Creating Static Websites and the substantive side of the project is under the care of Mrs Agnieszka Kozłowska, the Polish and class teacher. Mrs Magalena Czechowska - Buratowska and Mr Piotr Piekarski, English teachers, supervise the websites' tranlations.-->
         </div>
       </div>
     </section>
@@ -438,6 +446,8 @@
       <p>Strona internetowa szkoły: <a href="https://tl.krakow.pl/">https://tl.krakow.pl/</a></p>
       <img src="img/belka.jpg" alt="">
     </footer>
+
+
 
     <script type="text/javascript">
       // Te funkcje mają bardzo brzydki kod.
