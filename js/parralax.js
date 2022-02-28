@@ -1,6 +1,6 @@
 // Paralax na tle
 function parralax() {
   $(window).scroll((event) => {
-    $(".main-header").css("background-position", "0% " + (-1) * $(window).scrollTop()/10 + "%");
+    $(".main-header").css("background-position", "0% " + $(window).scrollTop()/3 + "px");
   });
 }
