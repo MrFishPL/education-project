@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*background-color: #fff;*/
+    /*font-size: 10px;*/ 
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+body
+{
+    background-color: #fcfcfc;
+}
+
+.anim0
+{
+    animation: wjazd .6s ease-out forwards;
+}
+
+.anim1
+{
+    animation: wjazd .6s .1s ease-out forwards;
+}
+.anim2
+{
+    animation: wjazd .6s .15s ease-out forwards;
+}
+
+.anim-left
+{
+    animation: left-entrance .6s .1s ease-out forwards;
+}
+
+.anim-right
+{
+    animation: right-entrance .6s .1s ease-out forwards;
+}
+
+.anim-op
+{
+    animation: opacity-entrance .2s .1s ease-out forwards;
+}
+
+a
+{
+    color: #000;
+}
+.loader
+{
+    position: fixed;
+    color: red;
+}
+footer
+{
+    margin-top: 50px;
+    border-top: .1em solid black
+
+}
+.anchor
+{
+    position: relative;
+    top:-5.5em;
+}
+footer>.coprights
+{
+    padding: 1em 0 1em;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 800px)
+{
+    .anim-right, .anim-left
+    {
+        animation: opacity-entrance .2s .1s ease-out backwards;
+    }
+}
+@keyframes wjazd
+{
+    0% {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

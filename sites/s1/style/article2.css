@@ -1,0 +1,50 @@
+/* Article */
+article
+{
+    margin-top: 20px;
+    width: 100%;
+    margin: 2em auto 0 auto;
+}
+.life
+{
+    margin: 1em auto 7em auto;
+    position: relative;
+    width: 75%;
+}
+.life>.part_of_life>.title
+{
+    font-size: 250%;
+    position: relative;
+    margin-left: 110px;
+    transition: all .2s ease-in-out;
+}
+.life>.part_of_life>.title:hover
+{
+    padding-left: 20px;
+}
+.life>.part_of_life>.title::before
+{
+    top: .5em;
+    transform: translateY(50%);
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    border-radius: 1em;
+    background-color: black;
+    content: "";
+    left: -100px;
+    transition: all .2s ease-in-out;
+}
+.life>.part_of_life>.title:hover::before
+{
+    width: 100px;
+}
+.life>.part_of_life>p
+{
+    width: 85%;
+    margin: .8em 5%;
+}
+.life>.part_of_life
+{
+    margin: 1.8em 0;
+}

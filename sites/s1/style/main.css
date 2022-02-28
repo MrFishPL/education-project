@@ -1,0 +1,160 @@
+.h_conteiner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 2.5em auto .5em auto; 
+}
+.h_conteiner>*
+{
+    width: min-content;
+}
+.h_conteiner p
+{
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+.img
+{
+    border-radius: 100%;
+    width: 450px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img>img
+{
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: filter .2s ease-in-out;
+}
+.hidden_content
+{
+    /* display: none; */
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .2s ease-in-out;
+}
+.img:hover img 
+{
+    filter: brightness(65%);
+}
+.img:hover .hidden_content
+{
+    opacity: 1;
+}
+.hidden_content h6
+{
+    margin-top: .5em;
+    text-align: right;
+    color: white;
+    width: 100%;
+    padding: 0 3em 0 3em;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.hidden_content blockquote
+{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 0 3em 0 3em;
+}
+.hc_conteiner
+{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hc_conteiner>h5
+{
+    font-size: 240%;
+    font-weight: bold;
+    font-size: 2.7rem;
+    /* margin: .3em 0 .3em; */
+}
+.hc_conteiner>h6
+{
+    font-size: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+.hc_conteiner>p
+{
+    font-size: .9rem;
+}
+.hc_conteiner>.refernce
+{
+    margin-top: 1.2em;
+    display: flex;
+}
+.refernce_block
+{
+    font-size: 13px;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: .02em solid #000000;
+    background-color: #F1E0AC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.2em 0 0;
+    transition: background-color .3s ease-in;
+    animation: wjazd .6s .15s ease-out backwards;
+}
+a[href="#facts"]>.refernce_block
+{
+    animation-delay: .45s;
+    background-color: #7C86A4;
+
+}
+a[href="#achivments"]>.refernce_block
+{
+    animation-delay: .30s;
+    background-color: #98B4AA;
+
+}
+a>.refernce_block:hover
+{
+    background-color: transparent;
+}
+.refernce>a
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 950px)
+{
+    .h_conteiner
+    {
+        flex-direction: column-reverse;   
+    }   
+    .hc_conteiner
+    {
+        padding-left: .6em;
+        margin-bottom: 1.5em;
+    }
+    .refernce
+    {
+        width: 100%;
+        justify-content: center;
+    }
+    .img, .img>img
+    {
+        text-align: justify;
+        width: 430px;
+        height: 430px;
+    }
+}

@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background: #ffffff;
+  left: 0;
+  overflow: visible;
+}
+h2 {
+  font-size: 25px;
+  height: 35px;
+  font-weight: bold;
+  position: relative;
+  left: 25%;
+}
+.menu {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu ul {
+  display: inline;
+  padding: 0;
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  height: 30px;
+  width: 24%;
+  text-align: center;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.podmenu1 {
+  display: none;
+  position: relative;
+}
+.menu ul li:hover {
+  border-radius: 3px;
+  background: rgb(112, 114, 110);
+}
+.menu ul li:hover .podmenu1 {
+  display: block;
+  position: absolute;
+  background: rgb(112, 114, 110);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.menu ul li:hover .podmenu1 ul {
+  display: block;
+  margin: 10px;
+  width: 210px;
+}
+.menu ul li:hover .podmenu1 ul li {
+  width: 190px;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.box {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+.midd1 {
+  float: left;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 400px;
+}
+.szmtk {
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  font-family: "Times New Roman", serif;
+}
+
+body {
+  width: 100%;
+  background-image: url("Pilecki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.midd {
+  float: left;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 400px;
+}
+.midd4 {
+  float: left;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 400px;
+}
+.midd5 {
+  float: left;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 400px;
+}
+.midd2 {
+  float: left;
+  margin-top: 100px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 250px;
+}
+.mid1 {
+  float: left;
+  margin-top: 150px;
+  color: rgb(0, 0, 0);
+  border: 5px solid #000000b6;
+  background-color: #2324239c;
+  background: opacity 0.65;
+  font-weight: 700;
+  font-family: Garamond, serif;
+  color: white;
+  height: 250px;
+}
+#zyciorys {
+  position: absolute;
+  bottom: 185px;
+}
+#mlodosc {
+  position: absolute;
+  bottom: 185px;
+}
+#konspiracja {
+  position: absolute;
+  bottom: 185px;
+}
+#auschwitz {
+  position: absolute;
+  bottom: 185px;
+}
+#ciekawostki {
+  position: absolute;
+  bottom: 185px;
+}
+footer {
+  width: 100%;
+  bottom: 0;
+  clear: both;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  background: white;
+  border-top: 2px solid black;
+}
+@media (max-width: 545px) {
+  h2 {
+    left: 20px;
+    font-size: 20px;
+  }
+  .menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+  }
+  .box {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  footer {
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    background: white;
+  }
+  header {
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background: #ffffff;
+    left: 0;
+    overflow: visible;
+  }
+  .midd {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000b6;
+    background-color: #2324239c;
+    background: opacity 0.65;
+    color: white;
+    height: 975px;
+  }
+  .midd4 {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000b6;
+    background-color: #2324239c;
+    background: opacity 0.65;
+    color: white;
+    height: 850px;
+  }
+  .midd5 {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000b6;
+    background-color: #2324239c;
+    background: opacity 0.65;
+    color: white;
+    height: 770px;
+  }
+  .midd2 {
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000b6;
+    background-color: #2324239c;
+    background: opacity 0.65;
+    color: white;
+    height: 500px;
+  }
+  .mid1 {
+    margin-top: 150px;
+    color: rgb(0, 0, 0);
+    border: 5px solid #000000b6;
+    background-color: #2324239c;
+    background: opacity 0.65;
+    color: white;
+    height: 300px;
+  }
+  #zyciorys {
+    position: absolute;
+    bottom: 225px;
+  }
+  #mlodosc {
+    position: absolute;
+    bottom: 215px;
+  }
+  #konspiracja {
+    position: absolute;
+    bottom: 250px;
+  }
+  #auschwitz {
+    position: absolute;
+    bottom: 215px;
+  }
+  #ciekawostki {
+    position: absolute;
+    bottom: 215px;
+  }
+  body {
+    width: 100%;
+    background-image: url("Pilecki.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  .menu ul li:hover .podmenu1 ul li {
+    width: 190px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+}

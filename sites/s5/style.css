@@ -1,0 +1,302 @@
+/* Basic page style resets */
+*
+{
+  scroll-behavior: smooth;
+  box-sizing:border-box;
+  font-family: Verdana, Arial, sans-serif;
+  color: var(--secondary-color);
+}
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+  --third-color: rgba(230,230,230);
+  --fourth-color:blue;
+}
+.dark-theme
+{
+  --primary-color:rgb(15,15,15);
+  --secondary-color:white;
+  --third-color: rgb(43,43,43);
+  --fourth-color:blue;
+}
+div
+{
+  margin:0;
+}
+.theme
+{
+  cursor:pointer;
+  position:fixed;
+  right:0;
+  bottom:0;
+  z-index:12;
+  background-color:var(--primary-color);
+  border:2px solid var(--secondary-color);
+  border-right:none;
+  border-bottom:none;
+}
+.theme img
+{
+  height:100px;
+  height:100px;
+}
+body
+{
+  margin:0;
+  width:100%;
+  background-color: var(--primary-color);
+  /*background-color:rgba(121, 40, 37);*/
+}
+.box
+{
+  margin: 0 auto;
+  position:relative;
+}
+.grid
+{
+  width:960px;
+  margin: 0 auto;
+
+}
+header
+{
+  border-bottom:2px solid black;
+  position: fixed;
+  top:0px;
+  width:100%;
+  z-index:1;
+  background: var(--primary-color);
+  left:0;
+  overflow:visible;
+  box-shadow: 0px 8px 25px -9px rgba(66, 68, 90, 1);
+  /*background: rgb(156,31,35)*/
+}
+.name
+{
+  font-size:25px;
+  height:35px;
+  font-weight:bold;
+  text-align:center;
+}
+.menu
+{
+  padding-top:15px;
+  width:960px;
+  margin:0 auto;
+  text-align:center;
+}
+.menu ul
+{
+  display: inline;
+  padding:0;
+  list-style-type: none;
+}
+.menu li
+{
+  display: inline-block;
+  height:30px;
+  width:25%;
+  text-align:center;
+  letter-spacing:0px;
+  transition-duration:0.5s;
+  float:left;
+}
+.menu a
+{
+  text-decoration:none;
+  color:var(--secondary-color);
+  display: block;
+}
+.zdjwyszynski
+{
+  /*border:2px solid black;*/
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:90px;
+  margin-bottom:40px;
+  border-radius:3px;
+  box-shadow: 0px -1px 31px 6px ;
+}
+hr
+{
+  color:var(--secondary-color);
+  display: block;
+  border-style:solid;
+}
+.subheader
+{
+  font-size:35px;
+  position:relative;
+}
+.trochenad
+{
+  position:absolute;
+  bottom:130px;
+}
+.tekst1
+{
+
+  float:left;
+  text-align:center;
+  font-size:120%;
+  margin:0 auto;
+  padding-left:40px;
+  padding-right:40px;
+  margin-bottom:40px;
+}
+q
+{
+  font-weight:bold;
+  font-style: italic;
+}
+.ciekawostki
+{
+  text-align:left;
+  /*list-style-type: none;*/
+}
+.ciekawostki li
+{
+  /*border-bottom:2px dotted rgba(30,30,30);*/
+  padding-bottom:10px;
+}
+footer
+{
+  border-top:2px solid black;
+  width:100%;
+  height:200px;
+  clear:both;
+  box-shadow: 0px -2px 25px -9px rgba(66, 68, 90, 1);
+  text-align:center;
+  display:block;
+}
+
+.stopka
+{
+  /*width:960px;
+  text-align:center;
+  margin:0 auto;*/
+  /*margin-left:144.800;
+  margin-right:144.800;*/
+}
+.konta
+{
+  font-size:20px;
+  text-decoration:none;
+  list-style-type: none;
+  color:var(--secondary-color);
+}
+
+.menu ul li:hover
+{
+  background-color: var(--third-color);
+  border-radius:3px;
+  font-weight:bold;
+  letter-spacing:1px;
+  transition-duration:0.3s;
+}
+.submenu1
+{
+  display:none;
+  z-index:1;
+  float:left;
+}
+.menu ul li:hover .submenu1
+{
+  display:block;
+  position:absolute;
+  background: var(--primary-color);
+  margin-top:11px;
+  margin-bottom:-15px;
+  width:230px;
+  border:2px solid var(--secondary-color);
+  padding:10px;
+  transition-duration:0.3s;
+}
+.menu ul li:hover .submenu1 ul
+{
+  display:block;
+  margin:10px;
+}
+.menu ul li:hover .submenu1 ul li
+{
+  font-weight:bold;
+  width:200px;
+  border-bottom:1px dotted var(--secondary-color);
+  background:transparent;
+  border-radius:0;
+  text-align:left;
+  padding:5px;
+  transition-duration:1s;
+}
+.menu ul li:hover .submenu1 ul li:hover
+{
+  background: var(--third-color);
+  border-radius:4px;
+}
+@media (max-width:/*545px*/900px)
+		{
+      .name
+      {
+        font-size:20px;
+      }
+      .menu
+      {
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+      }
+      .grid
+      {
+        width:100%;
+        margin: 0 auto;
+      }
+      .stopka
+      {
+        width:100%;
+        text-align:center;
+        margin:0 auto;
+        /*margin-left:144.800;
+        margin-right:144.800;*/
+      }
+      .zdjwyszynski
+      {
+        display:block;
+        /*border:2px solid black;*/
+        position:static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:90px;
+        margin-bottom:10px;
+      }
+      .tousun
+      {
+        display: none;
+      }
+      header
+      {
+        border-bottom:2px solid var(--secondary-color);
+        position: fixed;
+        top:0px;
+        width:100%;
+        z-index:1;
+        background:var(--primary-color);
+        left:0;
+        overflow:visible;
+        box-shadow: 0px 8px 25px -9px rgba(66, 68, 90, 1);
+      }
+      footer
+      {
+        width:100%;
+      }
+      .stopka span
+      {
+        float:left;
+        width:100%;
+      }
+      .theme img
+      {
+        height:50px;
+        height:50px;
+      }
+		}
