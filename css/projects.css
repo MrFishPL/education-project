@@ -44,7 +44,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(99, 134, 186, 0.8);
-  transition: opacity .3s;
+  transition: opacity .3s, font-size .3s;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -60,7 +60,17 @@
 .row-text h2 {
   font-size: 40px;
   text-transform: uppercase;
+  position: relative;
 }
+
+/* .row-text h2::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: #3a628a;
+  margin-top: 20px;
+} */
 
 .row-text p {
   margin-top: 30px;
@@ -154,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .mobile-break-line {
     display: block;
   }

@@ -41,6 +41,27 @@ function language() {
 
       $(".row:nth-child(1) .row-text p").text("Marie Curie is considered to be one of the most influential women, whose achievements flipped aout world upsite down. Her discoveries made it possible, among other things, to cure skin cancer and to perform X-rays.If you would like to find out more about her, please visit our website 🙂");
       $(".row:nth-child(1) .row-text h2").text("Maria Skłodowska-Curie. Pole of all time");
+
+      $(".row:nth-child(7) .row-text p").text("The website is dedicated to the first and only Polish Pope, a very important historical figure for Poland – Karol Wojtyle. His contribution to the history of our country was invaluable. It can be said with all boldness that without this man we would not enjoy life in a free Poland. For more interesting information we invite you to visit our website!");
+      $(".row:nth-child(7) .row-text h2").text("A few words about the Polish Pope.");
+
+      $(".row:nth-child(9) .row-text p").text("A model of courage and patriotism. Józef Piłsudki, although he encountered many obstacles on his way, the ups and downs, he never gave up and achieved his goal. We can talk about him for a long time, but if you would like to know what his life and everyday struggle looked like – go and see our website!");
+      $(".row:nth-child(9) .row-text h2").text("Józef Piłsudski - fighting to the death");
+
+      $(".row:nth-child(10) .row-text p").text("The man who completely changed the way people think about the sun and the earth. On our website, you will find information about him, his works, achievements and learn interesting facts about him.");
+      $(".row:nth-child(10) .row-text h2").text("Nicolaus Copernicus and his discoveries.");
+
+      $(".row:nth-child(11) .row-text p").text('As students and enthusiasts of computer games we decided to create a website about Polish e-sports legend Jaroslaw "pashaBiceps" Jarząbkowski. On the site you can learn about the rise of one of the best Counter-Strike player, his career , his biography and much more. You are invited to visit the site by: Karol Kolodziejczyk, Wiktor Siwecki and Filip Jaskulski.');
+      $(".row:nth-child(11) .row-text h2").text("Jarosław \"Pasha\" Jarząbkowski - Poland's greatest e-sportsman");
+
+      $(".row:nth-child(12) .row-text p").text('Meet the greatest Polish piano virtuoso - Fryderyk Chopin, who is referred to as "a native of Warsaw, a Pole at heart, a talent, a citizen of the world ...". The site includes his biography, short history, songs and what he left us.');
+      $(".row:nth-child(12) .row-text h2").text("Chopin's life and composition.");
+
+      $(".row:nth-child(13) .row-text p").text('Irena Sendlerowa - Polish social activist and humanitarian and head of the children’s section of “Żegota”, the Polish Council to Aid Jews, during World War II. It\'s a woman with a golden soul that will remain in our hearts forever. If you want to find out more, read our website!');
+      $(".row:nth-child(13) .row-text h2").text("Irena Sendlerowa - a woman with a big heart");
+
+      $(".row:nth-child(15) .row-text p").text('Jerzy Górski - Polish triathlete, world champion in double Ironman on September 3, 1990. In the past he was a drug addict, and later became a valued sportsman and charity activist.');
+      $(".row:nth-child(15) .row-text h2").text("Jerzy Górski - determination and a dream");
     }
 
     else {
@@ -81,6 +102,28 @@ function language() {
 
       $(".row:nth-child(1) .row-text p").text("Maria Curie nie bez powodu jest uznawana za jedną z najbardziej wpływowych kobiet, której dokonania miały niebagatelny wpływ na losy świata. Jej odkrycia pozwoliły między innymi, leczyć nowotwory skóry oraz wykonywać prześwietlenia. Jeżeli chciałbyś dowiedzieć się o niej czegoś więcej to  zapraszamy do zapoznania się z naszą stroną 🙂");
       $(".row:nth-child(1) .row-text h2").text("Maria Skłodowska-Curie. Polka wszechczasów");
+
+      $(".row:nth-child(7) .row-text p").text("Strona poświęcona pierwszemu i jedynemu polskiemu papieżowi, bardzo ważnej, zwłaszcza dla Polski, postaci historycznej - Karolowi Wojtyle. Wkład tej postaci w dzieje naszej Ojczyzny był nieoceniony. Można z całą śmiałością stwierdzić, że gdyby nie ten człowiek, to nie cieszylibyśmy się życiem w wolnej Polsce. Po więcej ciekawych informacji zapraszamy na naszą stronę!");
+      $(".row:nth-child(7) .row-text h2").text("Kilka słów o papieżu Polaku.");
+
+      $(".row:nth-child(9) .row-text p").text("Wzór odwagi oraz patriotyzmu. Józef Piłsudki chociaż na swojej drodze napotkał wiele przeciwności losu, wzloty oraz upadki nigdy się nie poddawał i osiągał swój cel. Opowiadać można o nim długo, lecz jeśli chciałby dowiedzieć jak wyglądał jego żywot i codzienna walka - zapraszamy do zapoznania się z naszą stroną!");
+      $(".row:nth-child(9) .row-text h2").text("Józef piłsudski - walczący do upadłego");
+
+
+      $(".row:nth-child(10) .row-text p").text("Człowiek, który zmienił całkowicie postrzeganie ludzi na temat Słońca i Ziemi. Na naszej stronie znajdziecie informacje o nim, o jego dziełach, dokonaniach oraz poznacie interesujące fakty na jego temat.");
+      $(".row:nth-child(10) .row-text h2").text("Mikołaj Kopernik i jego odkrycia.");
+
+      $(".row:nth-child(11) .row-text p").text("Jako uczniowie oraz pasjonaci gier komputerowych postanowiliśmy stworzyć stronę na temat polskiej legendy e-sportu, Jarosława \"pashyBicepsa\" Jarząbkowskiego. Na stronie można dowiedzieć się o powstaniu kariery jednego z najlepszych graczy Counter-Strike'a jego życiorysie oraz wiele więcej. Do obejrzenia witryny zapraszają: Karol Kołodziejczyk, Wiktor Siwecki i Filip Jaskulski.");
+      $(".row:nth-child(11) .row-text h2").text('Jarosław "Pasha" Jarząbkowski - Największy polski e-sportowiec');
+
+      $(".row:nth-child(12) .row-text p").text('Poznaj największego polskiego wirtuoza fortepianu - Fryderyka Chopina, o którym mówi się "Rodem warszawianin, sercem Polak, a talentem obywatel świata...". Strona zawiera jego biografię, krótką historię, utwory i to co nam zostawił.');
+      $(".row:nth-child(12) .row-text h2").text("Życie i twórczość Chopina.");
+
+      $(".row:nth-child(13) .row-text p").text('Irena Sendlerowa - polska działaczka społeczna i charytatywna, a w czasie II wojny światowej kierowniczka referatu dziecięcego Rady Pomocy Żydom przy Delegaturze Rządu na Kraj („Żegoty”). Jest to kobieta o złotej duszy, która pozostanie w naszych sercach na długo. Jeśli chcesz poznać ją bliżej, to zapraszamy!');
+      $(".row:nth-child(13) .row-text h2").text("Irena Sendlerowa - kobieta o wielkim sercu");
+
+      $(".row:nth-child(15) .row-text p").text('Jerzy Górski  – polski triathlonista, mistrz świata w podwójnym Ironmanie z 3 września 1990.W przeszłości był narkomanem, a później stał się cenionym sportowcem i działaczem charytatywnym.');
+      $(".row:nth-child(15) .row-text h2").text("Jerzy Górski - determinacja i marzenie");
     }
   });
 }
