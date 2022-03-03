@@ -62,6 +62,9 @@ function language() {
 
       $(".row:nth-child(15) .row-text p").text('Jerzy Górski - Polish triathlete, world champion in double Ironman on September 3, 1990. In the past he was a drug addict, and later became a valued sportsman and charity activist.');
       $(".row:nth-child(15) .row-text h2").text("Jerzy Górski - determination and a dream");
+
+      $(".row:nth-child(14) .row-text p").text('This page is not a full biography of the great champion, because if we wanted to make a full biography, we would have to write a book entitled "My Racing".  So we focused on the most important events in his wonderful career.  His exploits had not only sporting significance, but also contributed to regaining freedom of Poland, which became known all over the world.');
+      $(".row:nth-child(14) .row-text h2").text("Sobiesław Zasada - about the Pole who moved the whole world");
     }
 
     else {
@@ -124,6 +127,9 @@ function language() {
 
       $(".row:nth-child(15) .row-text p").text('Jerzy Górski  – polski triathlonista, mistrz świata w podwójnym Ironmanie z 3 września 1990.W przeszłości był narkomanem, a później stał się cenionym sportowcem i działaczem charytatywnym.');
       $(".row:nth-child(15) .row-text h2").text("Jerzy Górski - determinacja i marzenie");
+
+      $(".row:nth-child(14) .row-text p").text('Strona ta nie jest pełną biografią wielkiego mistrza, ponieważ jakbyśmy chcieli zrobić pełną biografię wyszłaby nam Jego książka pod tytułem ,,Moje Rajdy”. Skupiliśmy się więc na najważniejszych wydarzeniach w jego wspaniałej karierze.  Wyczyny mistrza miały nie tylko wydźwięk sportowy, ale przyczyniły się do odzyskania wolności Polski, która stała się znana na całym świecie.');
+      $(".row:nth-child(14) .row-text h2").text("Sobiesław Zasada - O Polaku, który poruszył cały świat");
     }
   });
 }
