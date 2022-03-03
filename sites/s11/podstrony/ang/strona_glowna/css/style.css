@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+}
+ul{
+    position: absolute;
+    list-style-type: none;
+    top: 0;
+    right: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px white;
+}
+a:hover{
+    color: white;
+}
+li{
+    display: inline-block;
+    margin: 40px;    
+}
+.EN{
+    position: absolute;
+    margin: 40px;
+    top: 0;
+    left: 0;
+}
+p{
+    position: absolute;
+    font-weight: 790;
+    color: white;
+    font-size: 47px; 
+}
+.pom{
+    color: #db7339;
+}
+.q1{
+    top: 42%;
+    left: 20%;
+}
+.papito{
+    top: 52%;
+    right: 25%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+@media (max-width:850px){
+    p{
+        font-size: 40px;
+    }
+}
+@media (max-width:720px){
+    p{
+        font-size: 35px;
+    }
+    .q1{
+        top: 44%;
+    }
+    li{
+         margin: 20px;
+     }
+    .EN{
+         margin: 20px;
+}
+@media (max-width:650px){
+    a{
+        font-size: 28px;
+    }
+    .q1{
+        left: 30px;
+        top: 42%;
+    } 
+    .pom{
+        left: 30px;
+    }
+    .papito{
+        top: 54%;
+        right: 30px;
+    }
+}
+@media (max-width:550px){
+    .q1{
+        left: 30px;
+        top: 42%;
+    }
+    .pom{
+        left: 30px;
+    }
+    .papito{
+        right: 30px;
+        top: 54%;
+        text-align: right;
+    }    
+    p{       
+        width: px;
+        font-size: 35px;
+    }
+    .EN{        
+        font-size: 24px;
+    }   
+    a{
+        font-size: 24px;
+    }
+}
+@media (max-width:500px){
+    a{
+        font-size: 20px;
+    }
+    .EN{
+       font-size: 20px; 
+    }
+    .q1{
+        top: 39%;
+    }
+ }
