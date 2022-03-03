@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: raleway;
+                font-weight: 300;
+            }
+            .box
+            {
+                margin: 0 auto;
+            }
+            header
+            {
+                position: relative;
+                background-color: #293d64;
+                height: 100px;
+                margin: 0 auto;
+            }
+            .menu {
+                top: 25px;
+               float: left;
+               width: 100%;
+               background: #fff;
+               border-bottom: 4px solid #000;
+               overflow: hidden;
+               position: relative;
+                background-color: #ededed;
+            }
+            .menu ul {
+               clear: left;
+               float: left;
+               list-style: none;
+               margin: 0;
+               padding: 0;
+               position: relative;
+               left: 50%;
+               text-align: center;
+            }
+            .menu ul li {
+               display: inline-block;
+               float: left;
+               list-style: none;
+               margin: 0;
+               padding: 0;
+               position: relative;
+               right: 50%;
+            }
+            .menu ul li a {
+               display: inline-block;
+               margin: 0 0 0 1px;
+               padding: 3px 10px;
+               background: #ddd;
+               color: #000;
+               text-decoration: none;
+               line-height: 30px;
+            }
+            .menu ul li a:hover {
+               background: #b00;
+               color: #fff;
+            }
+            .menu ul li a.zaznaczony, .menu ul li a.zaznaczony:hover {
+               color: #fff;
+               background: #000;
+               font-weight: bold;
+            }
+            .srodek
+            {
+                width: 960px;
+                margin: 3px auto;
+               width: 100%;
+                left: 30%;
+                background-color: #c4def0;
+                border-bottom: 3px solid black;
+            }
+            .t1, .t2, .t3, .t4, .t5
+            {
+                position: relative;
+                min-height: 100px;
+                padding: 5px;
+                text-align: justify
+            }
+            h3
+            {
+                text-align: center; 
+                font-weight: bold;
+            }
+            a
+            {
+                margin: 5px;
+            }
+            h1
+            {
+                text-align: center;
+                position: relative;
+                top: 10px;
+                font-size: 700;
+            }
+            .box1, .box2, .box3, .box4, .box5
+            {
+                margin: 0 auto;
+                width: min(100%, 960px);
+                padding-top: 25px;
+                padding-bottom: 25px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .autorzy
+            {
+                position: absolute;
+                left:20%;
+                list-style-type: none;
+            }
+            .zrudla
+            {
+                position: absolute;
+                right: 20%;
+                list-style-type: none;
+            }
+            footer
+            {
+                position: relative;
+                padding:  10px;
+            }
+            .galeria1
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .galeria2
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                padding-top: 4px;
+                padding-bottom: 10px;
+            }
+            .kaf
+            {
+                width: 315px;
+                height: 315px;
+                background-color: aqua;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 0px solid black;
+                border-radius: 10px;
+            }
+            .kaf div
+            {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, .8);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                opacity: 0;
+                transition: opacity .5s;
+                border: 0px solid black;
+                border-radius: 10px;
+            }
+            .kaf:hover div
+            {
+                opacity: 1;
+            }
+            .kaf1
+            {
+                background-image:url(Zasada1.jpg);
+            }
+            .kaf2
+            {
+                background-image:url(Zasada5.jpg);
+            }
+            .kaf3
+            {
+                background-image:url(Zasada3.jpg);
+            }
+            .kaf4
+            {
+                background-image:url(Zasada4.jpg);
+            }
+            .kaf5
+            {
+                background-image:url(Zasada2.jpg);
+            }
+            .kaf6
+            {
+                background-image:url(Zasada6.jpg);
+            }
+            .kaf7
+            {
+                background-image: url(Zasada7.jpg);
+            }
+            .kaf8
+            {
+                background-image:url(Zasada9.jpg);
+            }
+            .kaf9
+            {
+                background-image:url(Zasada10.jpg);
+            }
+            .kaf10
+            {
+                background-image:url(Zasada11.jpg);
+            }
+            .kaf11
+            {
+                background-image:url(Zasada12.jpg);
+            }
+            .kaf12
+            {
+                background-image:url(Zasada13.jpg);
+            }
+            .kaf13
+            {
+                background-image:url(Zasada14.jpg);
+            }
+            .kaf14
+            {
+                background-image: url(Zasada15.jpg);
+            }
+            .kaf15
+            {
+                background-image: url(Zasada8.jpg);
+            }
+            .kaf16
+            {
+                background-image: url(Zasada16.jpg);
+            }
+            .kaf17
+            {
+                background-image: url(Sobies%C5%82aw_Zasada_we_Fiacie_125p.jpg);
+            }
+            .kaf18
+            {
+                background-image: url(Zasada17.jpg);
+            }
+            video
+            {
+                position: absolute;
+            }
+            .wideo
+            {
+                position: relative;
+                overflow: hidden;
+                width: 315px;
+                height: 315px;
+            }
+            
+            .wideo video {
+                position: absolute;
+                height: 100%;
+            }
+            .zmargin
+            {
+                margin-bottom: 12px;
+            }
+            .cent
+            {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="box">
+                <div class="tlo">
+                    <header>
+                        <h1>SOBIESŁAW ZASADA</h1>
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="Zadanie%20Sobieslaw%20Zasada%20-%20wersja%20Angielska.html">EN</a></li>
+                                <li><a href="Zadanie%20Sobieslaw%20Zasada%20-%20wersja%20Polska.html">Strona główna</a></li>
+                                <li><a href="#dol">Źródła</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="srodek">
+                    <div class="box1">
+                        <div class="ph1">
+                        </div>
+                        <div class="t1">
+                            <h3>Przedstawienie</h3>
+                            <a>Sobiesław Zasada to jeden z najlepszych polskich kierowców rajdowych. Podczas swojej długiej kariery wygrał praktycznie wszystko, co się dało. Niestety czasy jego kariery przypadają na okres, kiedy w Polsce panował komunizm. Władza, delikatnie mówiąc, nie ułatwiała mu kariery, konieczność częstych zmian pilotów, oraz problemy ze zdobyciem wiz do obcych krajów to nie jedyne problemy, jakie spotkał na swojej drodze. Mimo to udało mu się zostać fabrycznym kierowcą Porsche oraz stać się najlepszym rajdowcem, nie tylko za żelazną kurtyną, ale i na całym świecie. W przerwie od ścigania się pisał książki, które stale inspirują młodych ludzi do dążenia do swoich celów mimo przeciwności losu. Pewnie każdy zna popularne w Polsce powiedzenie ,,Szerokiej drogi”, ale mało kto wie, że zostało one wymyślone właśnie przez niego.</a>
+                        </div>
+                    </div>
+                    <div class="galeria1">
+                        <div class="kaf kaf8 cent">
+                            <div>Sobiesław Zasada ze swoją przyszła żoną Ewą na nartach</div>
+                        </div>
+                        <div class="kaf kaf15 cent">
+                            <div>Sobiesław Zasada kierujący Fiata 600d 1963r.</div>
+                        </div>
+                        <div class="kaf kaf1 cent">
+                            <div>Sobiesław Zasada obok swojego Steyr-Pucha</div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="ph2">
+                        </div>
+                        <div class="t2">
+                            <h3>Życiorys przed 37 rokiem życia</h3>
+                            <a>Sobiesław Zasada urodził się 27 stycznia 1930 r. w Dąbrowie górniczej. W młodości trenował lekkoatletykę oraz aktywnie działał w harcerstwie. Obie te rzeczy miały duży wpływ na jego dalszą karierę, sport dał mu kondycję i umiejętność ciągłej pracy nad osobistym rozwojem, a harcerstwo nauczyło samodyscypliny.  Swój pierwszy rajd wygrał w lutym 1952 roku, na prawym fotelu siedziała wtedy Ewa Goworowska, która jeszcze tego samego roku stała się jego żoną. Ewa zawsze wspierała męża, często była jego pilotem, nawet na najtrudniejszych trasach rajdowych. W 1953 roku następuje straszny wypadek, który mógł zakończyć karierę mistrza nim ona się na dobre zaczęła. Podczas zjazdu na nartach w Zakopanem, doznaje otwartego złamania nogi, lekarze cudem uratowali ją przed amputacją. To przykre wydarzenie zakończyło lekkoatletyczną karierę Zasady, od tego momentu skupił się na rajdach samochodowych.  Pan Sobiesław startował wtedy swoimi prywatnymi samochodami m.in BMW 328 lub Fiatem 600d. Na rajdzie Monte Carlo w 1964 roku został on dostrzeżony przez szefa zespołu fabrycznego firmy Styer-Puch, który powiedział by przyjechał po rajdzie do fabryki, a tam dostanie samochód do rajdów. Tak rozpoczął się nowy etap w karierze mistrza. Przez ponad trzy lata był fabrycznym kierowcą tej firmy. Prowadząc mały, lekki, ale niestety słaby samochodzik nie raz pokonywał rywali na szybszych i mocniejszych autach. Udało mu się w 1966r zdobyć tym pojazdem tytuł rajdowego mistrza Europy, w tamtych czasach oznaczało to bycie rajdowym mistrzem świata!  Do dzisiaj pan Zasada miło wspomina te czasy, kiedy wszyscy dziwili się co można wykrzesać z tak małego Styer-Pucha.</a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf9 cent">
+                            <div>Okładka przeglądu sportowego z 1967r</div>
+                        </div>
+                        <div class="kaf kaf4 cent">
+                            <div>Tak witali go rodacy po powrocie z wygranego rajdu w Argentynie 1967r</div>
+                        </div>
+                        <div class="kaf kaf18 cent">
+                            <div>Wraz z Marianem Bieniem po Rajdzie Safari (zajęli wtedy 2 miejsce) 1972r</div>
+                        </div>
+                        </div>
+                    <div class="box3">
+                        <div class="ph3">
+                        </div>
+                        <div class="t3">
+                            <h3>Życiorys po 37 roku życia</h3>
+                            <a>Pan Sobiesław osobiście znał Ferdynarnda Porsche, ta znajomość sprawiła, że w 1967 roku wystąpił na Porsche 911 w Gran Premio de Argentina. Cały zarząd firmy zgodnie stwierdził, że ich samochód nie jest wstanie przejechać całej trasy tego trudnego rajdu. Trasa liczyła ponad 4000 kilometrów i większości przebiegała drogami, których stan można określić jako tragiczny.  Mimo to, po długich i wyczerpujących negocjacjach udało mu się uzyskać rajdówkę. Jednak nie startował on jako zespół fabryczny, lecz jako prywatny kierowca z serwisem Porsche. Zabieg ten pozwalał fabryce wyprzeć się wydawałoby się pewnej porażki. Jednak ku zaskoczeniu całego świata pan Zasada wygrał ten rajd i oficjalnie wprowadził firmę porsche do rajdów.  Do Europy wracał jako król, na lotnisku został hucznie powitany przez cały zarząd firmy, z samym panem Porsche na czele. W tym roku jako kierowca fabryczny porsche zdobył swój drugi tytuł rajdowego mistrza Europy. Jego przygoda z firmą Porsche trwała jeszcze 5 lat.  W tym okresie 2 krotnie zdobył tytuł rajdowego mistrza Europy, 3 krotnie wicemistrza Europy oraz 3 razy został rajdowym mistrzem Polski.  Zakończeniem tak wybitnej kariery musiało odbyć się podczas jakiegoś szczególnego wydarzenia. Wybór padł na rajd Vuelta del America del Sur. Trasa prowadziła dookoła ameryki południowej i liczyła 30 tysięcy kilometrów. Pan Sobiesław prowadząc mercedesa ukończył rajd na fenomenalnym 2 miejscu, był to 1978 rok.  Okazało się jednak, że mistrz nie chce tak szybko żegnać się z pasją swojego życia, w 1997 roku, w wieku 67 lat, razem z żoną wystąpił, w jednym z najtrudniejszych rajdów świata- Rajdzie safari.  Państwo Zasada wystartowali na rajdowym Mitsubishi EVO, zajeli oni 12 miejsce w klasyfikacji generalnej rajdu oraz 2 miejsce w swojej klasie, dodatkowo stali się najstarszą załogą, jaka kiedykolwiek wystąpiła w rajdzie samochodowym! Jak się później okaże to też nie było ostatnie słowo mistrza.  Niestety 19 sierpnia 2021 roku zmarła ukochana żona mistrza- Ewa, jego wielokrotna pilotka, na którą zawsze mógł liczyć. Dzisiaj 92 letni pan Sobiesław, który podczas swojej długiej kariery wygrał 148 rajdów samochodowych, jest właścicielem kilku salonów samochodowych, a mi nie pozostaje nic więcej jak liczyć mu zdrowia i Szerokiej drogi.</a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf7 cent">
+                            <div>Rekord jazdy ciągłej na Polskim Fiacie 125p 1973r</div>
+                        </div>
+                        <div class="kaf kaf12 cent">
+                            <div>Rekord jazdy ciągłej na Polskim Fiacie 125p 1973r</div>
+                        </div>
+                        <div class="kaf kaf16 cent">
+                            <div>Rekord jazdy ciągłej na Polskim Fiacie 125p 1973r</div>
+                        </div>
+                        </div>
+                    <div class="box4">
+                        <div class="ph4">
+                        </div>
+                        <div class="t4">
+                            <h3>Rekord Guinnessa</h3>
+                            <a>24 czerwca 2021 roku Sobiesław Zasada wziął udział w Rajdzie Safari, który zalicza się do Rajdowych Mistrzostw Świata. Wielki mistrz miał w tym czasie 91 lat, tym samym stał się najstarszym kierowcą, który wziął udział w rajdzie WRC. Startował on na specjalnie przygotowanym Fordzie Fieście. Mistrz niestety nie ukończył tego rajdu, utknął w koleinie z błota niecały kilometr przed metą zawodów. Jest to tylko przykry szczegół, który nie może przykryć tego wspaniałego wyczynu. Mistrz na zakończenie powiedział, że ma nadzieje, że pobije ten rekord w wieku 100 lat!</a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf10 cent">
+                            <div>Na trasie rajdu London-Sydney 1977r</div>
+                        </div>
+                        <div class="kaf kaf11 cent">
+                            <div>Na trasie rajdu London-Sydney 1977r</div>
+                        </div>
+                        <div class="kaf kaf5 cent">
+                            <div>Na trasie rajdu dookoła Ameryki Południowej (zajął 2 miejsce) 1978r</div>
+                        </div>
+                    </div>
+                    <div class="box5">
+                        <div class="ph5">
+                        </div>
+                        <div class="t5">
+                            <h3>Spotkanie po latach</h3>
+                            <a>We wrześniu 2018 roku Patryk Mikiciuk, zaczyna renowacje Porsche z niezwykłą, polską historią. Auto to było w Polsce od wczesnych lat 70 XX wieku.  Jednak projekt ten zmienił się o 180 stopni, gdy poznali prawdziwą historię tego auta, okazało się, że jest to jedna z rajdówek mistrza Zasady. Było to słynne porsche 911 o numerach rejestracyjnych 77-07-KW. Od tego czasu Patryk oraz ekipa ABcaru pieczołowicie przywracała auto dawną świetność.  Zwieńczenie tego przedsięwzięcia odbyło się 6 grudnia 2021 roku, kiedy to pan Sobiesław, który wtedy miał 91 lat, przejechał swoją rajdówką najsłynniejszy odcinek rajdowy w Polsce, słynne Kryterium Asów na ulicy Karowej. Było to ogromne wydarzenie dla całej polskiej sceny motor sportowej.</a>
+                        </div>
+                        </div>
+                        <div class="galeria2">
+                        <div class="kaf kaf3 cent">
+                            <div>Wraz z żoną na Rajdzie Safari w 1997r (2 miejsce w swojej klasie)</div>
+                        </div>
+                        <div class="kaf wideo">
+                            <video controls>
+                                <source src="Filmik%20Sobieslaw.mp4">
+                            </video>
+                        </div>
+                        <div class="kaf kaf13 cent">
+                            <div>Wraz z żoną podczas odsłaniania swojej gwiazdy w Alei Gwiazd Sportu we Władysławowie 2001r </div>
+                            </div>
+                        </div>
+                    </div>
+                <footer>
+                    <ol class="autorzy">
+                        <li class="zrodla">Autorzy:</li>
+                        <li class="zrodla">Jakub Mróz 1p</li>
+                        <li class="zrodla zmargin">Karol Sulima 1p</li>
+                    </ol>
+                    <ol class="zrudla">
+                        <li class="zrodla">Źródła:</li>
+                        <li class="zrodla"><a  target="_blank" href="https://pl.wikipedia.org/wiki/Sobies%C5%82aw_Zasada">Wikipedia</a></li>
+                        <li class="zrodla zmargin"><a  target="_blank" href="https://www.zasada.pl/sobieslaw-zasada">Zasada.pl</a></li>
+                        <p id="dol">
+                    </ol>
+                </footer>    
+            </div>
+    </body>
+</html>

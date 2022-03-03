@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: raleway;
+                font-weight: 300;
+            }
+            .box
+            {
+                margin: 0 auto;
+            }
+            header
+            {
+                position: relative;
+                background-color: #293d64;
+                height: 100px;
+                margin: 0 auto;
+            }
+            .menu {
+                top: 25px;
+               float: left;
+               width: 100%;
+               background: #fff;
+               border-bottom: 4px solid #000;
+               overflow: hidden;
+               position: relative;
+                background-color: #ededed;
+            }
+            .menu ul {
+               clear: left;
+               float: left;
+               list-style: none;
+               margin: 0;
+               padding: 0;
+               position: relative;
+               left: 50%;
+               text-align: center;
+            }
+            .menu ul li {
+               display: inline-block;
+               float: left;
+               list-style: none;
+               margin: 0;
+               padding: 0;
+               position: relative;
+               right: 50%;
+            }
+            .menu ul li a {
+               display: inline-block;
+               margin: 0 0 0 1px;
+               padding: 3px 10px;
+               background: #ddd;
+               color: #000;
+               text-decoration: none;
+               line-height: 30px;
+            }
+            .menu ul li a:hover {
+               background: #b00;
+               color: #fff;
+            }
+            .menu ul li a.zaznaczony, .menu ul li a.zaznaczony:hover {
+               color: #fff;
+               background: #000;
+               font-weight: bold;
+            }
+            .srodek
+            {
+                width: 960px;
+                margin: 3px auto;
+               width: 100%;
+                left: 30%;
+                background-color: #c4def0;
+                border-bottom: 3px solid black;
+            }
+            .t1, .t2, .t3, .t4, .t5
+            {
+                position: relative;
+                min-height: 100px;
+                padding: 5px;
+                text-align: justify
+            }
+            h3
+            {
+                text-align: center; 
+                font-weight: bold;
+            }
+            a
+            {
+                margin: 5px;
+            }
+            h1
+            {
+                text-align: center;
+                position: relative;
+                top: 10px;
+                font-size: 700;
+            }
+            .box1, .box2, .box3, .box4, .box5
+            {
+                margin: 0 auto;
+                width: min(100%, 960px);
+                padding-top: 25px;
+                padding-bottom: 25px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .autorzy
+            {
+                position: absolute;
+                left:20%;
+                list-style-type: none;
+            }
+            .zrudla
+            {
+                position: absolute;
+                right: 20%;
+                list-style-type: none;
+            }
+            footer
+            {
+                position: relative;
+                padding:  10px;
+            }
+            .galeria1
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .galeria2
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                padding-top: 4px;
+                padding-bottom: 10px;
+            }
+            .kaf
+            {
+                width: 315px;
+                height: 315px;
+                background-color: aqua;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 0px solid black;
+                border-radius: 10px;
+            }
+            .kaf div
+            {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, .8);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                opacity: 0;
+                transition: opacity .5s;
+                border: 0px solid black;
+                border-radius: 10px;
+            }
+            .kaf:hover div
+            {
+                opacity: 1;
+            }
+            .kaf1
+            {
+                background-image:url(Zasada1.jpg);
+            }
+            .kaf2
+            {
+                background-image:url(Zasada5.jpg);
+            }
+            .kaf3
+            {
+                background-image:url(Zasada3.jpg);
+            }
+            .kaf4
+            {
+                background-image:url(Zasada4.jpg);
+            }
+            .kaf5
+            {
+                background-image:url(Zasada2.jpg);
+            }
+            .kaf6
+            {
+                background-image:url(Zasada6.jpg);
+            }
+            .kaf7
+            {
+                background-image: url(Zasada7.jpg);
+            }
+            .kaf8
+            {
+                background-image:url(Zasada9.jpg);
+            }
+            .kaf9
+            {
+                background-image:url(Zasada10.jpg);
+            }
+            .kaf10
+            {
+                background-image:url(Zasada11.jpg);
+            }
+            .kaf11
+            {
+                background-image:url(Zasada12.jpg);
+            }
+            .kaf12
+            {
+                background-image:url(Zasada13.jpg);
+            }
+            .kaf13
+            {
+                background-image:url(Zasada14.jpg);
+            }
+            .kaf14
+            {
+                background-image: url(Zasada15.jpg);
+            }
+            .kaf15
+            {
+                background-image: url(Zasada8.jpg);
+            }
+            .kaf16
+            {
+                background-image: url(Zasada16.jpg);
+            }
+            .kaf17
+            {
+                background-image: url(Sobies%C5%82aw_Zasada_we_Fiacie_125p.jpg);
+            }
+            .kaf18
+            {
+                background-image: url(Zasada17.jpg);
+            }
+            video
+            {
+                position: absolute;
+            }
+            .wideo
+            {
+                position: relative;
+                overflow: hidden;
+                width: 315px;
+                height: 315px;
+            }
+            
+            .wideo video {
+                position: absolute;
+                height: 100%;
+            }
+            .zmargin
+            {
+                margin-bottom: 12px;
+            }
+            .cent
+            {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="box">
+                <div class="tlo">
+                    <header>
+                        <h1>SOBIESŁAW ZASADA</h1>
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="Zadanie%20Sobieslaw%20Zasada%20-%20wersja%20Polska.html">PL</a></li>
+                                <li><a href="Zadanie%20Sobieslaw%20Zasada%20-%20wersja%20Polska.html">Main page (PL)</a></li>
+                                <li><a href="#dol">Sources</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="srodek">
+                    <div class="box1">
+                        <div class="ph1">
+                        </div>
+                        <div class="t1">
+                            <h3>Introduction</h3>
+                            <a>Sobieslaw Zasada is one of the best Polish rally drivers. During his long career, he won practically everything he could. Unfortunately, the time of his career falls on a period when communism reigned in Poland. The authorities, to put it mildly, did not make his career easy, the need for frequent changes of pilots and problems with obtaining visas to foreign countries were not the only problems he encountered on his way. Despite this he managed to become a factory Porsche driver and became the best rally driver not only behind the Iron Curtain but in the whole world.  In his break from racing, he wrote books that constantly inspire young people to pursue their goals despite adversities. Probably everyone knows the saying "Have a nice road", popular in Poland, but hardly anyone knows that it was invented by him.</a>
+                        </div>
+                    </div>
+                    <div class="galeria1">
+                        <div class="kaf kaf8 cent">
+                            <div>Sobieslaw Zasada with his future wife Ewa on skis</div>
+                        </div>
+                        <div class="kaf kaf15 cent">
+                            <div>Sobieslaw Zasada driving a Fiat 600d 1963.</div>
+                        </div>
+                        <div class="kaf kaf1 cent">
+                            <div>Sobieslaw Zasada next to his Steyr-Puch</div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="ph2">
+                        </div>
+                        <div class="t2">
+                            <h3>Biography under 37</h3>
+                            <a>Sobiesław Zasada was born on 27 January 1930 in Dąbrowa Górnicza. As a young man, he trained athletics and was active in scouting. Both these things had a great impact on his further career; sport gave him fitness and the ability to constantly work on his personal development, while scouting taught him self-discipline.  He won his first rally in February 1952, the right seat was occupied by Ewa Goworowska, who became his wife the same year. Ewa always supported her husband, she was often his pilot, even on the most difficult rally routes. In 1953, a terrible accident happened, which could end the champion's career before it began for good. While skiing in Zakopane, he suffered an open leg fracture, doctors miraculously saved it from amputation. This unpleasant event ended the athletic career of Zasada, from that moment on he focused on rallying.  Sobiesław started with his private cars such as BMW 328 or Fiat 600d. At the Monte Carlo Rally in 1964, he was spotted by the factory team manager of Styer-Puch, who told him to come to the factory after the rally, and he would get a rally car there. Thus began a new phase in the champion's career. For more than three years he was a factory driver for this company. Driving a small, light, but unfortunately weak car, he not once defeated his rivals in faster and more powerful cars. In 1966, he managed to win the title of European Rally Champion with this car, which in those days meant becoming a World Rally Champion!  To this day, Mr. Zasada fondly remembers those times, when everyone was amazed at what could be done with such a small Styer-Puch.</a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf9 cent">
+                            <div>Sport Review cover from 1967.</div>
+                        </div>
+                        <div class="kaf kaf4 cent">
+                            <div>This is how his compatriots greeted him after he returned from winning the 1967 rally in Argentina</div>
+                        </div>
+                        <div class="kaf kaf18 cent">
+                            <div>Together with Marian Bienie after the Safari Rally (they took 2nd place) 1972</div>
+                        </div>
+                        </div>
+                    <div class="box3">
+                        <div class="ph3">
+                        </div>
+                        <div class="t3">
+                            <h3>Biography over 37</h3>
+                            <a>Sobieslaw knew Ferdinand Porsche personally, and this acquaintance led to his appearance in a Porsche 911 in the 1967 Gran Premio de Argentina. The entire board of directors of the company agreed that their car was not capable of completing the entire route of this difficult rally. The route was over 4000 kilometers long, and most of it was on roads that were in a terrible condition.  Nevertheless, after long and exhausting negotiations he managed to get a rally car. However, he did not start as a factory team, but as a private driver with Porsche service. This procedure allowed the factory to disavow a seemingly certain defeat. However, to the surprise of the entire world, Mr. Zasada won that rally and officially introduced Porsche to rallying.  He returned to Europe as a king, at the airport he was greeted pompously by the entire management of the company, headed by Mr. Porsche himself. That year as a Porsche factory driver he won his second European Rally Championship title. His adventure with Porsche lasted another 5 years.  During this period he won the title of European Rally Champion 2 times, European Vice-Champion 3 times and Polish Rally Champion 3 times.  The end of such an outstanding career had to take place during some special event. The choice fell on the Vuelta del America del Sur rally. The route led around South America and amounted to 30 thousand kilometers. Mr Sobiesław driving a Mercedes finished the rally in a phenomenal 2nd place, it was in 1978.  In 1997, at the age of 67, he and his wife took part in one of the most difficult rallies in the world - the Safari Rally.  Mr. and Mrs. Zasada started on a Mitsubishi EVO rally car, and they took 12th place in the general classification of the rally, and 2nd place in their class. As it would later turn out, this was not the champion's last word either.  Unfortunately, on 19 August 2021 his beloved wife Ewa, his multiple pilot whom he could always count on, died. Today, 92 year old Sobieslaw, who won 148 rallies during his long career, is the owner of several car dealerships.  </a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf7 cent">
+                            <div>Continuous driving record on a Polish Fiat 125p 1973r</div>
+                        </div>
+                        <div class="kaf kaf12 cent">
+                            <div>Continuous driving record on a Polish Fiat 125p 1973</div>
+                        </div>
+                        <div class="kaf kaf16 cent">
+                            <div>Continuous driving record on a Polish Fiat 125p 1973</div>
+                        </div>
+                        </div>
+                    <div class="box4">
+                        <div class="ph4">
+                        </div>
+                        <div class="t4">
+                            <h3>Guinness World Record</h3>
+                            <a>On 24 June 2021, Sobieslaw Zasada took part in the Safari Rally, which is part of the World Rally Championship. The great champion was 91 years old at the time, thus becoming the oldest driver to take part in a WRC rally.  He started on a specially prepared Ford Fiesta.  Unfortunately, the champion did not finish this rally, he got stuck in a mud rut less than a kilometer before the finish line. This is just an unfortunate detail that cannot cover up this great feat. The champion said at the end that he hopes to beat this record at the age of 100! </a>
+                        </div>
+                    </div>
+                        <div class="galeria1">
+                        <div class="kaf kaf10 cent">
+                            <div>On the London-Sydney rally route 1977</div>
+                        </div>
+                        <div class="kaf kaf11 cent">
+                            <div>On the London-Sydney rally route 1977</div>
+                        </div>
+                        <div class="kaf kaf5 cent">
+                            <div>On the route of the rally around South America (2nd place) 1978</div>
+                        </div>
+                    </div>
+                    <div class="box5">
+                        <div class="ph5">
+                        </div>
+                        <div class="t5">
+                            <h3>A meeting after years</h3>
+                            <a>In September 2018, Patryk Mikiciuk, begins the restoration of a Porsche with an unusual Polish history. The car had been in Poland since the early 1970s.  However, the project took a 180-degree turn when they learned the true history of this car, it turned out to be one of the rally cars of the champion Sobiesław Zasada. It was the famous Porsche 911 with registration number 77-07-KW. Since then Patryk and the ABcar team have been restoring the car to its former glory.  The project culminated on December 6, 2021, when  mister Sobiesław, who was 91 at the time, drove his car through the most famous rally section in Poland, the famous Criterium of Aces at Karowa Street. It was a great event for the whole Polish motor sport scene.   </a>
+                        </div>
+                        </div>
+                        <div class="galeria2">
+                        <div class="kaf kaf3 cent">
+                            <div>With his wife on the Safari Rally 1997 (2nd place in his class)</div>
+                        </div>
+                        <div class="kaf wideo">
+                            <video controls>
+                                <source src="Filmik%20Sobieslaw.mp4">
+                            </video>
+                        </div>
+                        <div class="kaf kaf13 cent">
+                            <div>Together with his wife during the unveiling of his star in the Sports Star Avenue in Władysławowo in 2001.</div>
+                            </div>
+                        </div>
+                    </div>
+                <footer>
+                        <ul class="autorzy">
+                            <li class="zrodla">Autorzy:</li>
+                            <li class="zrodla">Jakub Mróz 1p</li>
+                            <li class="zrodla zmargin">Karol Sulima 1p</li>
+                        </ul>
+                        <ul class="zrudla">
+                            <li class="zrodla">Źródła:</li>
+                            <li class="zrodla"><a  target="_blank" href="https://pl.wikipedia.org/wiki/Sobies%C5%82aw_Zasada">Wikipedia</a></li>
+                            <li class="zrodla zmargin"><a  target="_blank" href="https://www.zasada.pl/sobieslaw-zasada">Zasada.pl</a></li>
+                            <p id="dol">
+                        </ul>
+                </footer>    
+                </div>
+    </body>
+</html>

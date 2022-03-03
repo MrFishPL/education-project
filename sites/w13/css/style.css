@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 142px;
+    background: #D5BBA9;
+    font-family: 'Cookie', cursive;
+    font-weight: normal;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 25px;
+}
+.subheader{
+    height: 75px;
+    background: #756457;
+    padding: 24px 40px 24px 37px;
+    position:sticky;
+    top:0;
+}
+.subheader .menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.subheader .menu a{
+    font-family: Roboto;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+.subheader .menu a:hover{
+  transition: all 0.3s;
+  color: #3B3C38;
+  
+}
+.main{
+    
+    min-height: 2713px;
+    background: #F1ECE4;
+    padding: 122px 0 104px 0;
+}
+.main .sendlerowa1{
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 458px;
+    border: 2px solid  #D5BBA9;
+    border-radius: 8px;
+}
+.main .inf{
+    margin: 0 auto;
+    width: 645px;
+    min-height: 458px;
+    border-radius: 8px;
+    padding: 29px 15px 0 15px;
+    background: #D5BBA9;
+    border-radius: 8px;
+   /*  font-family: Roboto;
+    font-weight: normal; */
+    font-size: 18px;
+   /*  line-height: 24px; */
+    text-align: justify;
+}
+.main .inf .inf_title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+.bio{
+    margin: 0 auto;
+    margin-top: 84px;
+}
+.bio .bio_title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+.bio .bio_subtitle{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+.bio .bio_youth{
+    font-size: 18px;
+    text-align: justify;
+}
+.bio .bio_divider{
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 27px;
+    width: 600px;
+    height: 2px;
+    background: #000000;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.bio .bio_war{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.awards{
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 17px 15px 1px 18px;
+    width: 455px;
+    min-height: 525px;
+    background: #756457;
+    border-radius: 8px;
+}
+.awards .awards_title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+.awards .awards_list{
+    color: #ffffff;
+    font-weight: 500;
+}
+.pv{
+    
+    margin: 0 auto;
+    margin-top: 110px;
+    padding: 17px 34px 80px 34px;
+    width: 645px;
+    min-height: 525px;
+    font-size: 20px;
+    text-align: justify;
+}
+.pv .pv_title{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+.p_award{
+    margin: 0 auto;
+    margin-top: 114px;
+    width: 651px;
+    min-height: 324px; 
+    font-size: 24px;
+    text-align: justify; 
+}
+.p_award .p_award_title{
+    
+    margin-bottom: 60px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.sendlerowa2{
+    border: 2px solid  #D5BBA9;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 114px;
+    width: 360px;
+    height: 387px;
+}
+footer{
+    padding: 84px 167px;
+    
+    min-height: 196px;
+    background: #756457;
+    font-weight: 600;   
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media (max-width: 1199px)
+{
+  .container .sendlerowa1{
+    margin-bottom: 30px;
+  }
+  .main{
+    padding: 100px 0 104px 0;
+  }
+  
+}
+@media (max-width: 990px)
+{
+    .subheader{
+        padding: 23px 0px 24px 0px;
+        padding-left: none;
+    }
+    .main{
+        padding: 65px 0 80px 0;
+    }
+    .container .menu a{
+        font-size: 22px;
+    }
+    .container .menu{
+        padding-left: 0;
+    }
+    .container .inf{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .container .bio_divider{
+        width: 100%;
+    }
+    .container .awards{
+        width: 100%;
+    }
+    .container .p_award_descr{
+        font-size: 18px;
+    }
+    .container .pv{
+        width: 100%;
+    }
+    .container .p_award{
+        width: 100%;
+    }
+    .container .sendlerowa2{
+        margin-top: 100px;
+    }
+  .container .sendlerowa1{
+    margin-bottom: 30px;
+  }
+    footer{
+        padding: 50px 30px;
+        min-height: 109px;
+    }
+}
+@media (max-width: 775px)
+{
+  .subheader
+  {
+    padding: 24px 31px 24px 28px;
+  }
+  .container .menu a{
+      font-size: 15px;
+  }
+  .container .inf{
+    width:100%;
+    margin-top:30px;
+  }
+  .container .pv{
+        
+        width: 100%;
+  }
+  .container .p_award{
+    margin-top: 50px;
+        width: 100%;
+  }
+  .container .bio_divider{
+        width: 100%;
+  }
+  
+  .container .sendlerowa1{
+        margin-bottom: 20px;
+    }
+  .container .sendlerowa2{
+    margin-top: 200px;
+  }
+  footer{
+    padding: 60px 104px;
+    font-size: 23px;
+  }
+  
+}
+@media (max-width: 575px)
+{
+    header{
+        height: 102px;
+        font-size: 46px;
+    }
+    .subheader{
+        padding: 23px 0px 24px 0px;
+        padding-left: none;
+    }
+    .main{
+        padding: 65px 0 80px 0;
+    }
+  .container .sendlerowa1{
+    width: 250px;
+    height:318px;
+  }
+    .container .menu a{
+        font-size: 9px;
+    }
+    .container .menu{
+        padding-left: 0;
+    }
+    .container .inf{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .container .bio_divider{
+        width: 100%;
+    }
+    .container .awards{
+        width: 100%;
+    }
+    .container .p_award_descr{
+        font-size: 18px;
+    }
+    .container .pv{
+        width: 100%;
+    }
+    .container .p_award{
+        width: 100%;
+    }
+    .container .sendlerowa2{
+      width:250px;
+      height:268px;
+      margin-top: 100px;
+    }
+    footer{
+        padding: 50px 30px;
+        font-size: 16px;
+        min-height: 109px;
+    }
+}
+
+
