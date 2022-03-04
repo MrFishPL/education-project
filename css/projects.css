@@ -5,11 +5,6 @@
 .row {
   width: 100%;
   display: flex;
-  opacity: 0;
-}
-
-.row:first-child {
-  opacity: 1;
 }
 
 .row:nth-child(even) {
