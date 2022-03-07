@@ -65,6 +65,9 @@ function language() {
 
       $(".row:nth-child(14) .row-text p").text('This page is not a full biography of the great champion, because if we wanted to make a full biography, we would have to write a book entitled "My Racing".  So we focused on the most important events in his wonderful career.  His exploits had not only sporting significance, but also contributed to regaining freedom of Poland, which became known all over the world.');
       $(".row:nth-child(14) .row-text h2").text("Sobiesław Zasada - about the Pole who moved the whole world");
+
+      $(".row:nth-child(8) .row-text p").text('Maczek is a full-blooded and tragic figure - an exceptionally gifted commander who was not always able to enjoy the effects of a job well done. The author of great victories which he did not manage to prevent the tragedy of his homeland. An emigrant who - not accepting the political realities of post-war Poland - chose the fate of an exile. Finally, a man of honor who has endured the social degradation without complaint, which was the necessity to maintain a family in Scotland by manual labor.');
+      $(".row:nth-child(8) .row-text h2").text("General Stanisław Maczek, legend during his life");
     }
 
     else {
@@ -130,6 +133,10 @@ function language() {
 
       $(".row:nth-child(14) .row-text p").text('Strona ta nie jest pełną biografią wielkiego mistrza, ponieważ jakbyśmy chcieli zrobić pełną biografię wyszłaby nam Jego książka pod tytułem ,,Moje Rajdy”. Skupiliśmy się więc na najważniejszych wydarzeniach w jego wspaniałej karierze.  Wyczyny mistrza miały nie tylko wydźwięk sportowy, ale przyczyniły się do odzyskania wolności Polski, która stała się znana na całym świecie.');
       $(".row:nth-child(14) .row-text h2").text("Sobiesław Zasada - O Polaku, który poruszył cały świat");
+
+
+      $(".row:nth-child(8) .row-text p").text('Maczek to postać pełnokrwista i tragiczna – wybitnie uzdolniony dowódca, któremu nie zawsze dane było cieszyć się efektami dobrze wykonanej pracy. Autor wielkich zwycięstw, którymi nie zdołał zapobiec tragedii ojczyzny. Emigrant, który – nie akceptując politycznych realiów powojennej Polski – wybrał los wygnańca. Wreszcie człowiek honoru, który bez skargi zniósł społeczną degradację, jaką była konieczność utrzymywania w Szkocji rodziny fizyczną pracą.');
+      $(".row:nth-child(8) .row-text h2").text("Generał Stanisław Maczek, legenda za życia");
     }
   });
 }
