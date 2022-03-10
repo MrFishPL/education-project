@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 
-/* Todo: responsywność contentów */
 /* Website's content */
 
 .postac_text {
     position: relative;
-    color: #000;
+    color: var(--text);
     font-size: 20px;
     letter-spacing: 2px;
     right: 15%;
     left: 15%;
     max-width: 70%;
     padding: 30px 50px;
-    background: #fff;
+    background: var(--theme2);
     border-radius: 25px;
     text-align: justify;
     font-weight: 500;
@@ -23,7 +22,6 @@ span.lightshadow {
     transition: .6s;
 }
 
-/* Todo: add it to html */
 .zyciorys_content:hover span.lightshadow {
     color: #a8a846;
     /* text-shadow: 0 0 1px #e4e458; */
@@ -31,7 +29,7 @@ span.lightshadow {
 
 .tworczosc_content .tworczosc_main {
     position: relative;
-    color: #fff;
+    color: var(--text2);
     font-size: 50px;
     margin-left: 10%;
     letter-spacing: 2px;
@@ -40,7 +38,7 @@ span.lightshadow {
 
 .tworczosc_content .tworczosc_box h2 {
     position: relative;
-    color: #fff;
+    color: var(--text2);
     font-size: 45px;
     margin-left: 15%;
     letter-spacing: 2px;
@@ -51,12 +49,12 @@ span.lightshadow {
     content: "";
     height: 100%;
     width: 5px;
-    background: #fff;
+    background: var(--theme2);
     left: -15px;
 }
 
 .tworczosc_box {
-    color: #000;
+    color: var(--text);
     position: relative;
     width: 70%;
     left: 15%;
@@ -66,9 +64,10 @@ span.lightshadow {
     margin-bottom: 70px;
     letter-spacing: 2px;
     font-size: 20px;
-    background: #fff;
+    background: var(--theme2);
     padding: 30px 50px;
     border-radius: 25px;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
@@ -109,7 +108,7 @@ span.lightshadow {
     margin-right: 15%;
     margin-top: 30px;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--text2);
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -124,9 +123,9 @@ span.lightshadow {
 .postac_content video {
     width: 500px;
     margin-left: calc(50% - 250px);
-    border: 8px solid #fff;
+    border: 8px solid var(--theme2);
     border-radius: 50%;
-    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    box-shadow: 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 40px var(--theme2);
     /* animation: videoAnim 5s linear infinite; */
 }
 
@@ -137,47 +136,47 @@ span.lightshadow {
 @keyframes videoAnim {
     0% {
         /* border-radius: 50%; */
-        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+        box-shadow: 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 40px #ccc;
     }
 
     25% {
         /* border-radius: 48%; */
-        box-shadow: 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 60px #ccc;
+        box-shadow: 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 35px var(--theme2), 0 0 40px var(--theme2), 0 0 60px #ccc;
     }
 
     30% {
         /* border-radius: 48%; */
-        box-shadow: 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 60px #ccc;
+        box-shadow: 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 35px var(--theme2), 0 0 40px var(--theme2), 0 0 60px #ccc;
     }
 
     50% {
         /* border-radius: 50%; */
-        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 35px #ccc;
+        box-shadow: 0 0 5px var(--theme2), 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 35px #ccc;
     }
 
     55% {
         /* border-radius: 50%; */
-        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 35px #ccc;
+        box-shadow: 0 0 5px var(--theme2), 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 35px #ccc;
     }
 
     75% {
         /* border-radius: 48%; */
-        box-shadow: 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 45px #fff, 0 0 50px #fff, 0 0 70px #ccc;
+        box-shadow: 0 0 30px var(--theme2), 0 0 35px var(--theme2), 0 0 40px var(--theme2), 0 0 45px var(--theme2), 0 0 50px var(--theme2), 0 0 70px #ccc;
     }
 
     80% {
         /* border-radius: 48%; */
-        box-shadow: 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 45px #fff, 0 0 50px #fff, 0 0 70px #ccc;
+        box-shadow: 0 0 30px var(--theme2), 0 0 35px var(--theme2), 0 0 40px var(--theme2), 0 0 45px var(--theme2), 0 0 50px var(--theme2), 0 0 70px #ccc;
     }
 
     95% {
         /* border-radius: 50%; */
-        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+        box-shadow: 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 40px #ccc;
     }
 
     100% {
         /* border-radius: 50%; */
-        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+        box-shadow: 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 40px #ccc;
     }
 }
 
@@ -192,7 +191,7 @@ span.lightshadow {
         margin-left: 25%;
         border: 8px solid #fff;
         border-radius: 30px;
-        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+        box-shadow: 0 0 10px var(--theme2), 0 0 15px var(--theme2), 0 0 20px var(--theme2), 0 0 25px var(--theme2), 0 0 30px var(--theme2), 0 0 40px #ccc;
     }
 }
 
@@ -212,11 +211,11 @@ span.lightshadow {
     left: 0;
     font-size: 20px;
     letter-spacing: 2px;
-    color: #000;
+    color: var(--text);
     padding: 30px 50px;
     text-align: justify;
     font-weight: 500;
-    background: #fff;
+    background: var(--theme2);
     border-radius: 25px;
     margin-bottom: 200px;
     width: 55%;
@@ -235,14 +234,12 @@ span.lightshadow {
     left: 0;
     font-size: 23px;
     letter-spacing: 2px;
-    color: #000;
+    color: var(--text);
     padding: 30px 50px;
     text-align: justify;
     font-weight: 500;
-    border-left: 10px solid #ccc;
-    background: #fff;
+    background: var(--theme2);
     padding-bottom: 40px;
-    background: #fff;
     border-radius: 25px;
     margin-bottom: 50px;
     width: 90%;
@@ -252,7 +249,7 @@ span.lightshadow {
 .zyciorys_cudzyslow span:first-child {
     font-family: 'Roboto Mono', 'Poppins', sans-serif, Arial;
     font-size: 100px;
-    color: #000;
+    color: var(--text);
 }
 
 .zyciorys_box1 {
@@ -361,7 +358,7 @@ span.lightshadow {
 }
 
 .zyciorys_box4 ion-icon {
-    color: #fff;
+    color: var(--text);
     font-size: 290px;
     margin-right: 15.5%;
     display: none;
@@ -406,12 +403,12 @@ span.lightshadow {
 }
 
 .pochodzenie_text {
-    background: #fff;
-    color: #000;
+    background: var(--theme2);
+    color: var(--text);
     position: relative;
     left: 5%;
     width: 90%;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 2px;
     padding: 30px 50px;
@@ -424,14 +421,14 @@ span.lightshadow {
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #fff;
+    color: var(--text);
     margin-left: 10%;
     margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 700px) {
     .pochodzenie_text {
-        font-size: 30px;
+        font-size: 1.3em;
     }
 }
 
@@ -442,12 +439,13 @@ span.lightshadow {
 }
 
 .utwory_text {
-    color: #fff;
+    color: var(--text2);
     font-size: 50px;
     letter-spacing: 2px;
     font-weight: 500;
     margin-left: 5%;
     width: 90%;
+    margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -469,17 +467,17 @@ span.lightshadow {
 .dom_chopina_box {
     margin-left: 5%;
     width: 90%;
-    background-color: #fff;
+    background-color: var(--theme2);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .dom_chopina_box p {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    color: var(--text);
 }
 
 .podpis_chopina {
@@ -492,7 +490,7 @@ span.lightshadow {
 }
 
 .konkurs h2 {
-    color: #fff;
+    color: var(--text2);
     font-size: 40px;
     margin-left: 10%;
     margin-right: 10%;
@@ -502,19 +500,20 @@ span.lightshadow {
 }
 
 .konkurs p {
-    color: #000;
-    font-size: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-    background: #fff;
+    color: var(--text);
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: var(--theme2);
     padding: 30px 40px;
     border-radius: 25px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .konkurs a {
-    margin-left: 70%;
-    color: #fff;
+    margin-left: calc(50% + 100px);
+    color: var(--text2);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -523,26 +522,33 @@ span.lightshadow {
 }
 
 .konkurs a:hover {
-    text-shadow: 0 0 7px #fff;
+    text-shadow: 0 0 7px var(--theme2);
 }
 
 .pomnik img {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
 
 .pomnik p {
-    color: #000;
+    color: var(--text);
     font-size: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-    background: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: var(--theme2);
     padding: 30px 40px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     margin-bottom: 200px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .pomnik p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
