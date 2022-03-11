@@ -68,6 +68,9 @@ function language() {
 
       $(".row:nth-child(8) .row-text p").text('Maczek is a full-blooded and tragic figure - an exceptionally gifted commander who was not always able to enjoy the effects of a job well done. The author of great victories which he did not manage to prevent the tragedy of his homeland. An emigrant who - not accepting the political realities of post-war Poland - chose the fate of an exile. Finally, a man of honor who has endured the social degradation without complaint, which was the necessity to maintain a family in Scotland by manual labor.');
       $(".row:nth-child(8) .row-text h2").text("General Stanisław Maczek, legend during his life");
+
+      $(".row:nth-child(6) .row-text p").text("Military engineer, meritorious general, fighting for independence. Leader of the Kościuszko Insurrection and participant of The Revolutionary War of USA. Many places in the whole world have been named to his honor. We're inviting you to learn about his life on this site!");
+      $(".row:nth-child(6) .row-text h2").text("Tadeusz Kościuszko - A hero of Poland and the USA");
     }
 
     else {
@@ -137,6 +140,9 @@ function language() {
 
       $(".row:nth-child(8) .row-text p").text('Maczek to postać pełnokrwista i tragiczna – wybitnie uzdolniony dowódca, któremu nie zawsze dane było cieszyć się efektami dobrze wykonanej pracy. Autor wielkich zwycięstw, którymi nie zdołał zapobiec tragedii ojczyzny. Emigrant, który – nie akceptując politycznych realiów powojennej Polski – wybrał los wygnańca. Wreszcie człowiek honoru, który bez skargi zniósł społeczną degradację, jaką była konieczność utrzymywania w Szkocji rodziny fizyczną pracą.');
       $(".row:nth-child(8) .row-text h2").text("Generał Stanisław Maczek, legenda za życia");
+
+      $(".row:nth-child(6) .row-text p").text("Inżynier wojskowy, zasłużony generał, walczący o niepodległość. Przywódca Insurekcji Kościuszkowskiej i uczestnik wojny o niepodległość Stanów Zjednoczonych. Na jego cześć nazwano wiele miejsc na całym świecie. Zapraszamy do zapoznania się z jego życiem na tej stronie!");
+      $(".row:nth-child(6) .row-text h2").text("Tadeusz Kościuszko - Bohater Polski i USA");
     }
   });
 }
