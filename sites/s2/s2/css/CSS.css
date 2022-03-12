@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Tangerine:wght@700&display=swap');
+/*
+ - Zmien w media 120px .cytat top: -60px
+ - W zwykłym .cytat margin-top: -50px;
+ - Zmien w Ciekawostkach margin-top tekstowi pod obrazkiem
+ - Wywal border w  Zyciorysie (w angielskim jak i w polskim)
+ - Zamien css
+ - odzwiedz
+ - stopka w ciekawostkach
+*/
+*
+    {
+    box-sizing:border-box;
+    margin: 0;
+	padding: 0;
+	font-family: Times New Roman, serif;
+	}
+body
+    {
+	background-image: url('../grafiki/grunwald-tlo.png');
+    background-color: black;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	}
+.pudlo
+    {   
+    width: min(100%, 960px); 
+    margin-left: auto;
+    margin-right: auto;
+	color: white;
+	overflow: hidden;
+    }
+.tresc
+    {
+    width: 100%;
+    text-align: justify;
+	background: rgba(255,255,255,0.8);
+	color: black;
+	padding: 20px 50px 50px 50px;
+	line-height: 1.6;
+	position: relative;
+	font-size: 20px;
+    }
+header{
+	padding: 30px 30px;
+	background: #691E27;
+	position: relative;
+	}
+footer{
+	background-color: #591426;
+	padding: 30px 30px;
+	}
+.menu{
+	width: 100%;
+	list-style-type: none;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	}
+.menu2{
+	width: 100%;
+	list-style-type: none;
+	position: relative;
+	top: 5px;
+	z-index: 1;
+	transform: scaleY(0);
+	transition: transform .3s;
+	}
+.hamburger{
+	width: 32px;
+	height: 32px;
+}
+.lis li{
+	text-align: center;
+	background: #591426;
+	float: left;
+	}
+.menu .lis li{
+	display: inline;
+	width: 25%;
+
+}
+.cytat{
+	margin-top: 50px;
+}
+q{
+	font-family: 'Tangerine', cursive;
+}
+a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+.home
+    {
+    color: white;
+	display: inline-block;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;
+	}
+.stopka{
+	font-size: 12px;
+	}
+strong{
+	font-weight: bold;
+	text-decoration: underline;
+	}
+.lis li:hover{
+	background-color: #6B0021;
+	transition: background-color .3s, border .3s;
+	}
+/*li:hover a{
+	color: black;
+	transition: background-color .3s, border .3s;
+	}*/
+.title{
+	font-size: 70px;
+	font-family: 'Tangerine', cursive;
+	}
+.title2{
+	font-size: 35px;
+	font-family: 'Tangerine', cursive;
+}
+.horse{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	}
+p{
+	margin-bottom: 30px;
+	text-indent: 1.5em;
+	}
+.tresc p::first-letter{
+	font-family: 'Dancing Script', cursive;
+	font-weight: bolder;
+	font-size: 40px;
+	line-height: 0.6em;
+	}
+
+
+
+	.dropdownmenu{
+		height: 60px;
+		width: 100%;
+		font-size: 25px;
+		background: #4a1120;
+		border: none;
+		color: white;
+		font-family: 'Dancing Script', cursive;
+		display: none;
+		text-align: center;
+		padding-left: auto;
+		padding-right: auto;
+		position: relative;
+		padding-top: 15px;
+		z-index: 1;
+}
+	.stopka::first-letter{
+		font-family: Times New Roman;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	h3{
+		font-size: 75px;
+		font-family: 'Dancing Script', cursive;
+		font-weight: bolder;
+	}
+	.eng{
+		position: fixed;
+		right: 0;
+		left: 0;
+		margin: auto;
+		top: 2%;
+		width: 60px;
+		height: 60px;
+		padding: 0;
+		z-index: 2;
+		border-top: 4px solid #591426;
+		border-left: 4px solid #591426;
+		border-bottom: 4px solid #591426;
+		Transform: translateX(450px);
+	}
+	.eng a{
+		padding: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.eng a img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.cytat{
+		margin-top: 100px;
+	}
+	h4{
+		font-size: 40px;
+		font-family: Times New Roman;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	h4::first-letter{
+		font-family: 'Dancing Script', cursive;
+		font-size: 60px;
+	}
+		.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+	.loader{
+		border: 0 soild transparent;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: calc(50vh - 75px);
+		left: calc(50vw - 75px);
+	}
+	.loader:before, .loader:after{
+		content: '';
+		border: 1em solid #691E27;
+		border-radius: 50%;
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+		animation: loader 2s linear infinite;
+		opacity: 0;
+	}
+	.loader:before{
+		animation-delay: .5s;
+	}
+	@keyframes loader{
+		0%{
+			transform: scale(0);
+			opacity: 0;
+		}
+		50%{
+			opacity: 1;
+		}
+		100%{
+			transform: scale(1);
+			opacity: 0;
+		}
+	}
+	.knt{
+	padding-top: 20px;
+	}
+
+
+	
+@media (max-width: 1200px){
+	.horse{
+		display: none;
+		}
+.lis li{
+		padding: 0 10px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+	}
+
+@media (max-width: 960px){
+	.menu{
+		display: none;
+	}
+		.dropdownmenu:hover .menu2 {
+		transform: scaleY(1);
+		position: relative;
+
+	}
+	.dropdownmenu{
+		display: block;
+	}
+	.home1{
+		font-family:  'Dancing Script', cursive;
+		font-size: 20px;
+		color: white;
+		}
+	.zwijane{
+		width: 100%;
+		display: block;
+		background-color: #591426;
+	}
+	h3{
+		position: absolute;
+		font-size: 70px;
+		top: 80px;
+		left: 20px;
+		}
+	.eng{
+		top: 5%;
+		left: auto;
+		margin: 0;
+		position: fixed;
+		Transform: translateX(0);
+		width: 40px;
+		height: 40px;
+		border-top: 2px solid #591426;
+		border-left: 2px solid #591426;
+		border-bottom: 2px solid #591426;
+	}
+	
+}
+@media (max-width: 467px){
+		.dropdownmenu{
+			font-size: 18px;
+			padding-top: 10px;
+			height: 50px;
+			}
+		.title{
+			font-size: 35px;
+		}
+		header{
+			padding: 10px 10px;
+		}
+		.title2{
+			font-size: 25px;
+		}
+		.home{
+			font-size: 18px;
+		}
+		p{
+			font-size: 15px;
+		}
+		.stopka{ 
+			font-size: 10px;
+		}
+		.tresc p::first-letter{
+			font-size: 30px;
+		}
+		.menu2{
+			top: 2px;
+		}
+		h3{
+		font-size: 50px;
+		top: 60px;
+		}
+		.eng{
+		width: 30px;
+		height: 30px;
+		border-top: 2px solid #591426;
+		border-left: 2px solid #591426;
+		border-bottom: 2px solid #591426;
+		}
+	h4{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+	h4::first-letter{
+		font-size: 40px;
+	}
+
+	@media (max-width: 300px){
+		.dropdownmenu{
+			padding-top: 4px;
+		}
+		.lis .zwijane{
+			height: 30px;
+		}
+		.zwijane a{
+			height: 30px;
+		}
+		.hamburger{
+			width: 20px;
+			height: 20px;
+		}
+		.tresc{
+			padding: 20px;
+		}
+		.title{
+		font-size: 25px;
+		}
+		.title2{
+			font-size: 15px;
+		}
+		.home{
+			font-size: 10px;
+		}
+		li{
+			height: 30px;
+		}
+		p{
+			font-size: 8px;
+		}
+		.stopka{ 
+			font-size: 10px;
+		}
+		.tresc p::first-letter{
+			font-size: 25px;
+		}
+		.dropdownmenu{
+			height: 30px;
+			font-size: 15px;
+		}
+		.home1{
+			font-size: 10px;
+		}
+		a{
+			padding: 10px 5px;
+		}
+		footer{
+			padding: 4px;
+		}
+		.stopka{
+			font-size: 5px;
+		}
+		.eng{
+		width: 16px;
+		height: 16px;
+		border-top: 1px solid #591426;
+		border-left: 1px solid #591426;
+		border-bottom: 1px solid #591426;
+		}
+		.eng a{
+			padding-top: 0;
+		}
+		.eng a img{
+			margin: 0;
+		}
+		.menu2{
+		top: 1px;
+		}
+		h3{
+		font-size: 32px;
+		top: 50px;
+		}
+			h4{
+		font-size: 15px;
+		margin-top: 10px;
+		}
+		h4::first-letter{
+			font-size: 25px;
+		}
+	}@media (max-width: 120px){
+		.hamburger{
+			width: 10px;
+			height: 10px;
+		}
+		.dropdownmenu{
+			padding-top: 5px;
+		}
+		.title{
+		font-size: 20px;
+		}
+		.title2{
+			font-size: 10px;
+		}
+		.home{
+			font-size: 5px;
+		}
+		li{
+			height: 20px;
+		}
+		p{
+			font-size: 5px;
+		}
+		.stopka{ 
+			font-size: 3px;
+		}
+		footer{
+			height: 30px;
+			padding: 5px 5px;
+		}
+		.tresc p::first-letter{
+			font-size: 15px;
+		}
+		.tresc{
+			padding: 10px;
+		}
+		.dropdownmenu{
+			height: 20px;
+			font-size: 10px;
+		}
+		h3
+		{
+		font-size: 20px;
+		top: 30px;
+		left: 10px;
+		}
+		.eng{
+		width: 10px;
+		height: 10px;
+		border-top: 0.5px solid #591426;
+		border-left: 0.5px solid #591426;
+		border-bottom: 0.5px solid #591426;
+		}
+		h4{
+		font-size: 8px;
+		margin-top: 5px;
+		}
+		h4::first-letter{
+			font-size: 18px;
+		}
+
+	}
+		
