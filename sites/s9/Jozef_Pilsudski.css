@@ -11,8 +11,118 @@ body{
     /* Background pattern from subtlepatterns.com */
     background-image: url("img/hip-square.png");
 }
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .navbac{
+    background-color: #b87332;
+    border: 7px #70201f solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header{
+    background-color: #b87332;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+}
+.header{
+    height: 50px;
+    background-color: #70201f;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    top: 0px;
+}
+footer{
+    height: 50px;
+    background-color: #70201f;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    font-size: 64px;
+    margin-top: 0;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+img{
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+hr{
+    border: 1px #70201f solid;
+}
+.scrollup{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #b87332;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* When you mouse over the navigation links, change their color */
 
-@media screen and (min-width: 451px){
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}*/
+span{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px){
     #container{
         display: grid;
         gap: 20px;
@@ -30,27 +140,6 @@ body{
         "z o p p"
         "z q q r";
     }
-    header{
-        background-color: #b87332;
-        width: 100%;
-        height: 70px;
-        margin: 0;
-    }
-    .header{
-        position: sticky;
-        height: 50px;
-        top: 0px;
-        background-color: #70201f;
-        margin-bottom: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    footer{
-        clear: both;
-        height: 50px;
-        background-color: #70201f;
-        width: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
     footer h2{
         position: relative;
         top: 11px;
@@ -59,13 +148,6 @@ body{
         position: sticky;
         top: 70px;
     }
-    h1, h2{
-        text-align: center;
-    }
-    h1{
-        font-size: 64px;
-        margin-top: 0;
-    }
     footer a{
         left: 0;
         bottom: 0;
@@ -73,31 +155,9 @@ body{
     footer h2{
         margin-bottom: 0;
     }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-    a:hover{
-        text-decoration: underline;
-        font-weight: bold;
-    }
-    p{
-        padding: 10px;
-    }
-    .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .navbac{
-        background-color: #b87332;
-        border: 7px #70201f solid;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
     li{
         text-align: left;
         padding: 5px;
-    }
-    img{
-        padding: 10px;
-        display: block;
-        margin: auto;
     }
     .a{
         grid-area: a;
@@ -162,21 +222,79 @@ body{
         top: 15px;
         margin-left: 15px;
     }
-    .mobile{
+    span{
         display: none;
     }
-    .scrollup{
-        width: 64px;
-        height: 64px;
-        text-decoration: none;
-        background: url("img/up.png") no-repeat 0px 0px;
-        position: fixed;
-        right: 50px;
-        bottom: 70px;
-        display: none;
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1450px){
+    #container{
+        width: 960px;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "z a b"
+        "z c d"
+        "z e f"
+        "z g h"
+        "z i j"
+        "z k l"
+        "z m n"
+        "z o p"
+        "z q r";
+    }
+    .header{
+        position: sticky;
+        height: 50px;
+        top: 0px;
+        background-color: #70201f;
+        margin-bottom: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r{
+        width: 368px;
+    }
+    .navbac{
+        grid-area: z;
+    }
 }
+
+@media screen and (min-width: 450px) and (max-width: 1000px){
+    #container{
+        overflow-x: hidden;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "a"
+        "d"
+        "e"
+        "h"
+        "i"
+        "l"
+        "m"
+        "p"
+        "q";
+    }
+    .a, .d, .e, .h, .i, .l, .m, .p, .q{
+        width: 100%;
+    }
+    .navbac, .scrollup, .b, .c, .f, .g, .j, .k, .n, .o, .r, .header a{
+        display: none;
+    }
+    span{
+        position: relative;
+        left: 2px;
+        zoom: 200%;
+    }
+}
+
+/*telefony ------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 450px){
     #container{
@@ -187,24 +305,14 @@ body{
         width: 100%;
         grid-template-areas:
         "a"
-
         "d"
         "e"
-
         "h"
         "i"
-
         "l"
         "m"
-
         "p"
-        "q"
-;
-    }
-    img{
-        padding: 10px;
-        display: block;
-        margin: auto;
+        "q";
     }
     header{
         width: 100%;
@@ -213,117 +321,24 @@ body{
     .header{
         width: 100%;
     }
-    .lan, .index, .spis, .nav{
-        display: none;
-    }
-
-    h1{
-        text-align: center;
-        margin: 0;
-        padding: 10px;
-    }
-    h2{
-        text-align: center;
-    }
     a{
         text-align: center;
         margin: 0;
         padding-top: 2px;
         padding-bottom: 2px;
     }
-    .mobile {
-        list-style-type:none;
-        padding:0;
-        margin:0;
-        text-align:center;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
-    .mobile a {
-        display:block;
-        text-decoration:none;
-        color:#000;
-    }
-
-    /* wygląd elementów - li - wszystkich dzieci elementu - ol */
-    .mobile > li {
-        float:left;
-        height:2em;
-        background-color: #70201f;
-    }
-    .llan{
-        width: 10%;
-    }
-    .lindex, .lspis{
-        width: 45%;
-    }
-    .mspis:hover{
-        height: 2em;
-    }
-
-    /* wygląd elementu - li - pierwszego dziecka elementu - ol */
-    .mobile > li:first-child {
-        margin-left:0;
-    }
-    /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
-    .mobile > li:hover > ul {
-        display:block;
-    }
-
-    /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
-
-    /* wygląd głównych rozwijanych elementów - ul */
-    .mobile > li > ul {
-        display:none;
-        list-style-type:none;
-        padding:0;
-        margin:0;
-    }
-
-    /* wygląd elementu - li - w części rozwijanej */
-    .mobile > li > ul > li {
-        position:relative;
-        background-color: #70201f;
-    }
-
-    /* wygląd elementu - a - w części rozwijanej */
-    .mobile > li > ul > li > a {
-        border-top:1px solid #FFF;
-    }
-    
-    footer{
-        background-color: #70201f;
-        margin-top: 5px;
+    .a, .d, .e, .h, .i, .l, .m, .p, .q{
         width: 100%;
-        margin-bottom: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    footer h2{
-        margin: 0;
-        padding: 5px;
-    }
-    #container div{
-        background-color: #b87332;
-        border: 5px #70201f solid;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    .a{
-        margin-top: 10px;
-    }
-    .b, .c, .f, .g, .j, .k, .n, .o, .r, .navbac{
+    .navbac, .scrollup, .b, .c, .f, .g, .j, .k, .n, .o, .r, .header a{
         display: none;
     }
-    .scrollup{
-        width: 64px;
-        height: 64px;
-        text-decoration: none;
-        background: url("img/up.png") no-repeat 0px 0px;
-        position: fixed;
-        right: 40px;
-        bottom: 40px;
-        display: none;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    span{
+        position: relative;
+        left: 2px;
+        zoom: 200%;
+    }
+    h1{
+        font-size: 48px;
     }
 }

@@ -6,7 +6,6 @@
     <title>Józef Piłsudski</title>
     <link rel="stylesheet" href="Jozef_Pilsudski.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
     <script>
         jQuery(function($){
             $.scrollTo(0);
@@ -19,20 +18,50 @@
             else $('.scrollup').fadeOut();
         }
         );
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+          
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }      
     </script>
 </head>
 <body>
     <header>
         <h1 id="up">Józef Piłsudski</h1>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Jozef_Pilsudski_en.html">EN</a>
+            <a href="../../index.html">STRONA GŁÓWNA</a>
+            <hr/>
+            <h3>SPIS TREŚCI</h3>
+            <a href="#1">Dzieciństwo i młodość</a>
+            <a href="#2">Zesłanie na Syberię</a>
+            <a href="#3">Polska Partia Socjalistyczna</a>
+            <a href="#4">Organizacja Oddziałów paramilitarnych</a>
+            <a href="#5">I Wojna Światowa</a>
+            <a href="#6">Naczelnik państwa i wojna polsko-bolszewicka</a>
+            <a href="#7">Wycofanie i powrót do życia politycznego</a>
+            <a href="#8">Poprawa sytuacji państwa</a>
+            <a href="#9">Śmierć i pochówek Józefa Piłsudskiego</a>
+        </div>
+    </div>
+    
     <div class="header">
+        <span class="open" onclick="openNav()">&#9776;</span>
         <a href="Jozef_Pilsudski_en.html" class="lan">EN</a>
         <a href="../../index.html" class="index">STRONA GŁÓWNA</a>
-        <ol class="mobile">
-            <li class="llan"><a href="Jozef_Pilsudski_en.html" class="mlan">EN</a></li>
-            <li class="lindex"><a href="../../index.html" class="mindex">STRONA GŁÓWNA</a></li>
-            <li class="lspis"><a href="#" class="mspis">SPIS TREŚCI</a>
-                <ul class="ls">
+    </div>
+    <div id="container">
+        <a href="#up" class="scrollup"></a>
+        <div class="navbac">
+            <div class="nav">
+                <h2>SPIS TREŚCI</h2>
+                <ol>
                     <li><a href="#1">Dzieciństwo i młodość</a></li>
                     <li><a href="#2">Zesłanie na Syberię</a></li>
                     <li><a href="#3">Polska Partia Socjalistyczna</a></li>
@@ -42,27 +71,8 @@
                     <li><a href="#7">Wycofanie i powrót do życia politycznego</a></li>
                     <li><a href="#8">Poprawa sytuacji państwa</a></li>
                     <li><a href="#9">Śmierć i pochówek Józefa Piłsudskiego</a></li>
-                </ul>
-            </li>
-        </ol>
-    </div>
-    <div id="container">
-        <a href="#up" class="scrollup"></a>
-        <div class="navbac">
-            <div class="nav">
-            <h2>SPIS TREŚCI</h2>
-            <ol>
-                <li><a href="#1">Dzieciństwo i młodość</a></li>
-                <li><a href="#2">Zesłanie na Syberię</a></li>
-                <li><a href="#3">Polska Partia Socjalistyczna</a></li>
-                <li><a href="#4">Organizacja Oddziałów paramilitarnych</a></li>
-                <li><a href="#5">I Wojna Światowa</a></li>
-                <li><a href="#6">Naczelnik państwa i wojna polsko-bolszewicka</a></li>
-                <li><a href="#7">Wycofanie i powrót do życia politycznego</a></li>
-                <li><a href="#8">Poprawa sytuacji państwa</a></li>
-                <li><a href="#9">Śmierć i pochówek Józefa Piłsudskiego</a></li>
-            </ol>
-        </div>
+                </ol>
+            </div>
         </div>
         <div class="a">
             <h2 id="1">Dzieciństwo i młodość</h2>
@@ -140,7 +150,7 @@
         </div>
     </div>    
     <footer>
-        <h2>AUTORZY: Michał Maślanka i Max Liana 1P</h2>
+        <h2>Strona stworzona przez Michała Maślanke i Maxa Lianę 1P</h2>
     </footer>
 </body>
 </html>

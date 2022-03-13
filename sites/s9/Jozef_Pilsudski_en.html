@@ -6,7 +6,6 @@
     <title>Józef Piłsudski</title>
     <link rel="stylesheet" href="Jozef_Pilsudski.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="jquery.scrollTo.min.js"></script>
     <script>
         jQuery(function($){
             $.scrollTo(0);
@@ -19,50 +18,61 @@
             else $('.scrollup').fadeOut();
         }
         );
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+          
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }      
     </script>
 </head>
 <body>
     <header>
         <h1 id="up">Józef Piłsudski</h1>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Jozef_Pilsudski_pl.html">PL</a>
+            <a href="../../index.html">MAIN PAGE</a>
+            <hr/>
+            <h3>TABLE OF CONTENTS</h3>
+            <a href="#1">Childhood and youth</a>
+            <a href="#2">Exile to Siberia</a>
+            <a href="#3">Polish Socialist Party</a>
+            <a href="#4">Organization of paramilitary units</a>
+            <a href="#5">First World War</a>
+            <a href="#6">The head of state and the Polish-Bolshevik war</a>
+            <a href="#7">Withdrawal and return to political life</a>
+            <a href="#8">Improvement of the state's situation</a>
+            <a href="#9">Death and burial of Jozef Piłsudski</a>
+        </div>
+    </div>
+    
     <div class="header">
+        <span class="open" onclick="openNav()">&#9776;</span>
         <a href="Jozef_Pilsudski_pl.html" class="lan">PL</a>
         <a href="../../index.html" class="index">MAIN PAGE</a>
-        <ol class="mobile">
-            <li class="llan"><a href="Jozef_Pilsudski_pl.html" class="mlan">PL</a></li>
-            <li class="lindex"><a href="../../index.html" class="mindex">MAIN PAGE</a></li>
-            <li class="lspis"><a href="#" class="mspis">TABLE OF CONTENTS</a>
-                <ul class="ls">
-                    <li><a href="#1">Dzieciństwo i młodość</a></li>
-                    <li><a href="#2">Zesłanie na Syberię</a></li>
-                    <li><a href="#3">Polska Partia Socjalistyczna</a></li>
-                    <li><a href="#4">Organizacja Oddziałów paramilitarnych</a></li>
-                    <li><a href="#5">I Wojna Światowa</a></li>
-                    <li><a href="#6">Naczelnik państwa i wojna polsko-bolszewicka</a></li>
-                    <li><a href="#7">Wycofanie i powrót do życia politycznego</a></li>
-                    <li><a href="#8">Poprawa sytuacji państwa</a></li>
-                    <li><a href="#9">Śmierć i pochówek Józefa Piłsudskiego</a></li>
-                </ul>
-            </li>
-        </ol>
     </div>
     <div id="container">
         <a href="#up" class="scrollup"></a>
         <div class="navbac">
             <div class="nav">
-            <h2>TABLE OF CONTENTS</h2>
-            <ol>
-                <li><a href="#1">Childhood and youth</a></li>
-                <li><a href="#2">Exile to Siberia</a></li>
-                <li><a href="#3">Polish Socialist Party</a></li>
-                <li><a href="#4">Organization of paramilitary units</a></li>
-                <li><a href="#5">First World War</a></li>
-                <li><a href="#6">The head of state and the Polish-Bolshevik war</a></li>
-                <li><a href="#7">Withdrawal and return to political life</a></li>
-                <li><a href="#8">Improvement of the state's situation</a></li>
-                <li><a href="#9">Death and burial of Jozef Piłsudski</a></li>
-            </ol>
-        </div>
+                <h2>TABLE OF CONTENTS</h2>
+                <ol>
+                    <li><a href="#1">Childhood and youth</a></li>
+                    <li><a href="#2">Exile to Siberia</a></li>
+                    <li><a href="#3">Polish Socialist Party</a></li>
+                    <li><a href="#4">Organization of paramilitary units</a></li>
+                    <li><a href="#5">First World War</a></li>
+                    <li><a href="#6">The head of state and the Polish-Bolshevik war</a></li>
+                    <li><a href="#7">Withdrawal and return to political life</a></li>
+                    <li><a href="#8">Improvement of the state's situation</a></li>
+                    <li><a href="#9">Death and burial of Jozef Piłsudski</a></li>
+                </ol>
+            </div>
         </div>
         <div class="a">
             <h2 id="1">Childhood and youth</h2>
@@ -140,7 +150,7 @@
         </div>
     </div>    
     <footer>
-        <h2>AUTHORS: Michał Maślanka i Max Liana 1P</h2>
+        <h2>Website created by Michał Maślanka i Max Liana 1P</h2>
     </footer>
 </body>
 </html>
