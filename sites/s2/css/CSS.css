@@ -181,6 +181,7 @@ p{
 		height: 60px;
 		padding: 0;
 		z-index: 2;
+		border-radius: 3px 0 0 3px;
 		border-top: 4px solid #591426;
 		border-left: 4px solid #591426;
 		border-bottom: 4px solid #591426;
@@ -309,6 +310,7 @@ p{
 		Transform: translateX(0);
 		width: 40px;
 		height: 40px;
+		border-radius: 1px 0 0 1px;
 		border-top: 2px solid #591426;
 		border-left: 2px solid #591426;
 		border-bottom: 2px solid #591426;
