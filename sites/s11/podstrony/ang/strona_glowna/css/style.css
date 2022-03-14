@@ -127,6 +127,19 @@ p{
         top: 39%;
     }
  }
+    @media (max-width:400px){
+    a{
+        font-size: 12px;
+        margin: -10px;
+    }
+    .EN{
+       font-size: 12px; 
+    }
+        ul{
+            right: 40px;
+        }  
+    
+ }
     @media (max-width:330px){
     .EN{
         margin: 0;
