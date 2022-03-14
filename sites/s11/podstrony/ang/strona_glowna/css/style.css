@@ -127,3 +127,15 @@ p{
         top: 39%;
     }
  }
+    @media (max-width:330px){
+    .EN{
+        margin: 0;
+    }
+    li{
+        margin: 0 15px;
+    }
+    p{
+        font-size: 30px;
+        
+    }
+}
