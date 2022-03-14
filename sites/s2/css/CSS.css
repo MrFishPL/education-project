@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Tangerine:wght@700&display=swap');
-/*
- - Zmien w media 120px .cytat top: -60px
- - W zwykłym .cytat margin-top: -50px;
- - Zmien w Ciekawostkach margin-top tekstowi pod obrazkiem
- - Wywal border w  Zyciorysie (w angielskim jak i w polskim)
- - Zamien css
- - odzwiedz
- - stopka w ciekawostkach
-*/
+
 *
     {
     box-sizing:border-box;
@@ -18,8 +10,8 @@
 body
     {
 	background-image: url('../grafiki/grunwald-tlo.png');
-    background-color: black;
-    background-repeat: no-repeat;
+    	background-color: black;
+    	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	}
@@ -99,7 +91,7 @@ a{
 	}
 .home
     {
-    color: white;
+    	color: white;
 	display: inline-block;
 	font-family: 'Dancing Script', cursive;
 	font-size: 20px;
