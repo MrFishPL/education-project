@@ -48,7 +48,7 @@ function language() {
       $(".row:nth-child(9) .row-text p").text("A model of courage and patriotism. Józef Piłsudki, although he encountered many obstacles on his way, the ups and downs, he never gave up and achieved his goal. We can talk about him for a long time, but if you would like to know what his life and everyday struggle looked like – go and see our website!");
       $(".row:nth-child(9) .row-text h2").text("Józef Piłsudski - fighting to the death");
 
-      $(".row:nth-child(10) .row-text p").text("The man who completely changed the way people think about the sun and the earth. On our website, you will find information about him, his works, achievements and learn interesting facts about him.");
+      $(".row:nth-child(10) .row-text p").text("The man who completely changed the way people think about the Sun and the Earth. On our website, you will find information about him, his works, achievements and learn interesting facts about him.");
       $(".row:nth-child(10) .row-text h2").text("Nicolaus Copernicus and his discoveries.");
 
       $(".row:nth-child(11) .row-text p").text('As students and enthusiasts of computer games we decided to create a website about Polish e-sports legend Jaroslaw "pashaBiceps" Jarząbkowski. On the site you can learn about the rise of one of the best Counter-Strike player, his career , his biography and much more. You are invited to visit the site by: Karol Kolodziejczyk, Wiktor Siwecki and Filip Jaskulski.');
