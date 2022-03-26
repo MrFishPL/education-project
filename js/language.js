@@ -30,7 +30,7 @@ function language() {
       $(".row:nth-child(3) .row-text h2").text("Adam Mickiewicz - life and work");
       $(".row-text a").text("See the website");
 
-      $(".row:nth-child(2) .row-text p").text("Honorable, brave, gallant and undefeated on battleground. He was perfect knight in middleages. He loyally served Poland and if he had to, he was able to sacrifice his life for it. We can say a lot of things about his achievements and I’m sure that won’t be exaggeration if I say that they wouldn’t fit in one thousand-paged book. I think that our page isn’t big enough too, but we hope, that the content of this page will be interesting. You have to judge it by yourself…");
+      $(".row:nth-child(2) .row-text p").text("Honorable, brave, gallant and undefeated on battleground. He was perfect a knight in middleages. He loyally served Poland and if he had to, he was able to sacrifice his life for it. We can say a lot of things about his achievements and I’m sure that won’t be an exaggeration if I say that they wouldn’t fit in one thousand-paged book. I think that our page isn’t big enough too, but we hope, that the content of this page will be interesting. You have to judge it by yourself…");
       $(".row:nth-child(2) .row-text h2").text("Zawisza the Black - „God, Honor, Fatherland”");
 
       $(".row:nth-child(4) .row-text p").text("A brave soldier, active in the underground during World War II. Unjustly judged by the communist authorities and sentenced to death. He was the first to describe the inside of the Auschwitz-Birkenau concentration camp. He is one of the most interesting figures of World War II. If you want to learn more about Rotamaster Witold Pilecki - we invite you!");
