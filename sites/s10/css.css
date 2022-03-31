@@ -277,6 +277,10 @@ figcaption
     {
         right: 5px;
     }
+    *
+    {
+	font-size: 15px;
+    }
 }
 *::-webkit-scrollbar {
     width: 10px;
