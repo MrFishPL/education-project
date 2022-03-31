@@ -201,6 +201,20 @@ figcaption
     caption-side: bottom;
     text-align: center;
 }
+
+.jumptop
+{
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #9c3e21;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 @media (max-width: 790px)
 {
     nav ul li a
@@ -259,7 +273,10 @@ figcaption
         justify-content: center;
         flex-wrap: wrap;
     }
-    
+    .jumptop
+    {
+        right: 5px;
+    }
 }
 *::-webkit-scrollbar {
     width: 10px;
