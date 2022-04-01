@@ -39,7 +39,7 @@ function language() {
       $(".row:nth-child(5) .row-text p").text("Website devoted to Stefan Wyszyński - the primate of the millennium. It has descriptions of the most important elements of his life. Getting to know his biography you can see how great his influence on the world was. At the end you can read interesting facts and less known about him.");
       $(".row:nth-child(5) .row-text h2").text("The Primate who changed Poland");
 
-      $(".row:nth-child(1) .row-text p").text("Marie Curie is considered to be one of the most influential women, whose achievements flipped aout world upsite down. Her discoveries made it possible, among other things, to cure skin cancer and to perform X-rays.If you would like to find out more about her, please visit our website 🙂");
+      $(".row:nth-child(1) .row-text p").text("Marie Curie is considered to be one of the most influential women, whose achievements flipped aout world upsite down. Her discoveries made it possible, among other things, to cure skin cancer and to perform X-rays.If you would like to find out more about her, please visit our website :)");
       $(".row:nth-child(1) .row-text h2").text("Maria Skłodowska-Curie. Pole of all time");
 
       $(".row:nth-child(7) .row-text p").text("The website is dedicated to the first and only Polish Pope, a very important historical figure for Poland – Karol Wojtyle. His contribution to the history of our country was invaluable. It can be said with all boldness that without this man we would not enjoy life in a free Poland. For more interesting information we invite you to visit our website!");
@@ -109,7 +109,7 @@ function language() {
       $(".row:nth-child(5) .row-text p").text("Strona poświęcona Stefanowi Wyszyńskiemu - prymasowi tysiąclecia. Posiada opisy najważniejszych elementów jego życia. Poznając jego życiorys można zobaczyć jak wielki miał wpływ na świat. Na końcu przeczytać można ciekawostki i mniej znane o nim fakty.");
       $(".row:nth-child(5) .row-text h2").text("Prymas, który odmienił Polskę");
 
-      $(".row:nth-child(1) .row-text p").text("Maria Curie nie bez powodu jest uznawana za jedną z najbardziej wpływowych kobiet, której dokonania miały niebagatelny wpływ na losy świata. Jej odkrycia pozwoliły między innymi, leczyć nowotwory skóry oraz wykonywać prześwietlenia. Jeżeli chciałbyś dowiedzieć się o niej czegoś więcej to  zapraszamy do zapoznania się z naszą stroną 🙂");
+      $(".row:nth-child(1) .row-text p").text("Maria Curie nie bez powodu jest uznawana za jedną z najbardziej wpływowych kobiet, której dokonania miały niebagatelny wpływ na losy świata. Jej odkrycia pozwoliły między innymi, leczyć nowotwory skóry oraz wykonywać prześwietlenia. Jeżeli chciałbyś dowiedzieć się o niej czegoś więcej to  zapraszamy do zapoznania się z naszą stroną :)");
       $(".row:nth-child(1) .row-text h2").text("Maria Skłodowska-Curie. Polka wszechczasów");
 
       $(".row:nth-child(7) .row-text p").text("Strona poświęcona pierwszemu i jedynemu polskiemu papieżowi, bardzo ważnej, zwłaszcza dla Polski, postaci historycznej - Karolowi Wojtyle. Wkład tej postaci w dzieje naszej Ojczyzny był nieoceniony. Można z całą śmiałością stwierdzić, że gdyby nie ten człowiek, to nie cieszylibyśmy się życiem w wolnej Polsce. Po więcej ciekawych informacji zapraszamy na naszą stronę!");
